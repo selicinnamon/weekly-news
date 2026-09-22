@@ -24,6 +24,11 @@ test("server-renders the bilingual editorial site", async () => {
   assert.match(html, /Evidence Assessment/);
   assert.match(html, /How to Deal with the Taliban/);
   assert.match(html, /Could AIs Become Conscious\?/);
+  assert.match(html, /本周新闻简报/);
+  assert.match(html, /THE WEEK IN BRIEF/);
+  assert.match(html, /观点与争鸣/);
+  assert.match(html, /最强反方检验/);
+  assert.match(html, /English brief/);
   assert.doesNotMatch(html, /codex-preview|react-loading-skeleton/);
 });
 
@@ -41,6 +46,10 @@ test("keeps the requested coverage, scoring and local filters", async () => {
   assert.match(page, /useState<Category>/);
   assert.match(page, /setQuery/);
   assert.match(page, /setSource/);
+  assert.match(page, /const briefs: BriefItem\[\]/);
+  assert.match(page, /const commentary: CommentaryItem\[\]/);
+  assert.equal((page.match(/id: "brief-/g) ?? []).length, 12);
+  assert.equal((page.match(/id: "comment-/g) ?? []).length, 3);
   assert.match(layout, /og\.png/);
   assert.doesNotMatch(packageJson, /react-loading-skeleton/);
 });
