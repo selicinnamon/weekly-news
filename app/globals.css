@@ -13,6 +13,19 @@
 
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
+article[id], section[id] { scroll-margin-top: 100px; }
+.edition-picker { display: flex; align-items: center; flex-wrap: wrap; gap: 12px; margin-bottom: 26px; position: relative; z-index: 2; font-size: 12px; }
+.edition-picker select { max-width: 100%; padding: 10px; border: 1px solid var(--line); background: var(--paper); }
+.edition-picker a { color: var(--forest); }
+.source-links { padding-left: 18px; font-size: 12px; line-height: 1.8; color: var(--forest); overflow-wrap: anywhere; }
+.source-ledger { padding: 64px 5vw; border-top: 1px solid var(--line); font-size: 13px; line-height: 1.9; }
+.source-ledger > p { max-width: 1000px; }
+.source-ledger details { border-top: 1px solid var(--line); padding: 18px 0; }
+.source-ledger summary { cursor: pointer; font-weight: 600; }
+.source-ledger li { margin: 18px 0; }
+.source-ledger li p { margin: 5px 0; color: var(--muted); }
+.ledger-note { color: var(--muted); }
+button:focus-visible, a:focus-visible, select:focus-visible, summary:focus-visible { outline: 2px solid var(--forest); outline-offset: 4px; }
 body { margin: 0; background: var(--paper); color: var(--ink); font-family: "Avenir Next", "PingFang SC", "Microsoft YaHei", sans-serif; }
 button, input, select { font: inherit; }
 a { color: inherit; }

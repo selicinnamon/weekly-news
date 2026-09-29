@@ -1,0 +1,90 @@
+export type Category = "本周重点" | "国际" | "经济" | "社会" | "文化" | "科技";
+
+export type BriefItem = {
+  links?: {label: string; url: string}[];
+  id: string;
+  category: Exclude<Category, "本周重点">;
+  titleZh: string;
+  titleEn: string;
+  summaryZh: string;
+  summaryEn: string;
+  why: string;
+  date: string;
+  source: string;
+  sourceType?: "刊物来源" | "外部核查";
+};
+
+export type CommentaryItem = {
+  articleId?: string;
+  caseEn?: string[];
+  backgroundZh?: string;
+  backgroundEn?: string;
+  evidenceZh?: string;
+  evidenceEn?: string;
+  tags?: [string, string][];
+  links?: {label: string; url: string}[];
+  id: string;
+  titleZh: string;
+  titleEn: string;
+  author: string;
+  authorRole: string;
+  source: string;
+  pages: string;
+  position: string;
+  thesisZh: string;
+  thesisEn: string;
+  caseZh: string[];
+  value: string;
+  challenge: string;
+  takeaway: string;
+};
+
+export type Topic = {
+  articleId?: string;
+  author?: string;
+  genre?: string;
+  pdfPages?: string;
+  publications?: string[];
+  links?: {label: string; url: string}[];
+  id: string;
+  category: Exclude<Category, "本周重点">;
+  tags: [string, string][];
+  title: string;
+  titleZh: string;
+  source: string;
+  issue: string;
+  pages: string;
+  score: number;
+  importance: number;
+  quality: number;
+  readTime: number;
+  featured?: boolean;
+  deepRead?: boolean;
+  summaryZh: string;
+  summaryEn: string;
+  backgroundZh: string;
+  backgroundEn: string;
+  argumentZh: string[];
+  argumentEn: string[];
+  evidenceZh: string;
+  evidenceEn: string;
+  why: string;
+  limits: string;
+  perspective?: string;
+};
+
+export type Edition = {
+  id: string;
+  label: string;
+  period: string;
+  status: string;
+  lede: string;
+  observation: string;
+  scope: string;
+  readingNote: string;
+  briefs: BriefItem[];
+  topics: Topic[];
+  commentary: CommentaryItem[];
+  sources: {publication: string; issue: string; pages: number; status: string}[];
+  audit?: {article: string; genre: string; importance: number; quality: number; decision: string}[];
+};

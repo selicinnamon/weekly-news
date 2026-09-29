@@ -22,8 +22,11 @@ test("server-renders the bilingual editorial site", async () => {
   assert.match(html, /少读一点/);
   assert.match(html, /News Summary/);
   assert.match(html, /Evidence Assessment/);
-  assert.match(html, /How to Deal with the Taliban/);
-  assert.match(html, /Could AIs Become Conscious\?/);
+  assert.match(html, /Hegemon no more/);
+  assert.match(html, /AI Agents Hit Two Federal Websites/);
+  assert.match(html, /2026.09.21/);
+  assert.match(html, /来源与编辑记录/);
+  assert.match(html, /PDF 第/);
   assert.match(html, /本周新闻简报/);
   assert.match(html, /THE WEEK IN BRIEF/);
   assert.match(html, /观点与争鸣/);
@@ -38,18 +41,42 @@ test("keeps the requested coverage, scoring and local filters", async () => {
     readFile(new URL("../app/layout.tsx", import.meta.url), "utf8"),
     readFile(new URL("../package.json", import.meta.url), "utf8"),
   ]);
-  for (const category of ["国际", "经济", "社会", "文化", "科技"]) {
-    assert.match(page, new RegExp(`category: "${category}"`));
-  }
-  assert.match(page, /importance:\s*\d+/);
-  assert.match(page, /quality:\s*\d+/);
   assert.match(page, /useState<Category>/);
   assert.match(page, /setQuery/);
   assert.match(page, /setSource/);
-  assert.match(page, /const briefs: BriefItem\[\]/);
-  assert.match(page, /const commentary: CommentaryItem\[\]/);
-  assert.equal((page.match(/id: "brief-/g) ?? []).length, 12);
-  assert.equal((page.match(/id: "comment-/g) ?? []).length, 3);
+  assert.match(page, /setEditionId/);
+  assert.match(page, /searchParams.set\("edition"/);
   assert.match(layout, /og\.png/);
   assert.doesNotMatch(packageJson, /react-loading-skeleton/);
+});
+
+test("edition has complete bilingual fields, transparent sources and coverage", async () => {
+  const issue = JSON.parse(await readFile(new URL("../data/editions/2026-09-27.json", import.meta.url), "utf8"));
+  assert.equal(issue.briefs.length, 13);
+  assert.equal(issue.topics.length, 8);
+  assert.equal(issue.commentary.length, 3);
+  assert.equal(issue.topics.filter(t => t.deepRead).length, 3);
+  assert.equal(issue.topics.filter(t => t.category === "科技").length, 1);
+  assert.deepEqual(new Set(issue.topics.map(t => t.category)), new Set(["国际","经济","社会","文化","科技"]));
+  const ids = [...issue.briefs,...issue.topics,...issue.commentary].map(x => x.id);
+  assert.equal(new Set(ids).size, ids.length);
+  for (const t of issue.topics) {
+    assert.equal(t.score, t.importance + t.quality);
+    assert.ok(t.importance <= 60 && t.quality <= 40);
+    for (const key of ["summaryZh","summaryEn","backgroundZh","backgroundEn","evidenceZh","evidenceEn","author","pdfPages","articleId"]) assert.ok(t[key]?.length, `${t.id}: ${key}`);
+    assert.equal(t.argumentZh.length, t.argumentEn.length);
+    assert.ok(t.tags.every(pair => pair.length === 2 && pair.every(Boolean)));
+  }
+  for (const b of issue.briefs) assert.ok(b.summaryZh && b.summaryEn && b.date && b.source);
+  for (const c of issue.commentary) {
+    for (const key of ["backgroundZh","backgroundEn","evidenceZh","evidenceEn","thesisZh","thesisEn"]) assert.ok(c[key]);
+    assert.equal(c.caseZh.length, c.caseEn.length);
+  }
+  assert.equal(issue.sources.length, 10);
+  assert.equal(issue.sources.reduce((n,s) => n+s.pages,0), 664);
+  assert.match(issue.sources.find(s => s.publication === "FT Weekend Magazine").status, /未成功/);
+  assert.equal(issue.audit.length, 10);
+  const archive = await readFile(new URL("../data/editions/pilot.ts", import.meta.url), "utf8");
+  assert.match(archive, /How to Deal with the Taliban/);
+  assert.equal((archive.match(/id: "brief-/g) ?? []).length, 12);
 });

@@ -14,7 +14,7 @@ export async function generateMetadata(): Promise<Metadata> {
     icons: { icon: "/favicon.svg", shortcut: "/favicon.svg" },
     openGraph: {
       title: "The Weekly Edit｜少读一点，看懂更多",
-      description: "7 期刊物、618 页内容，精选 8 个议题与 3 篇精读。",
+      description: "每周新闻简报、领域解读与观点评论；原创中英双语导读，可回看历史各期。",
       type: "website",
       images: [{ url: imageUrl, width: 1200, height: 630, alt: "The Weekly Edit" }],
     },
