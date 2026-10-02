@@ -9,19 +9,19 @@ export async function generateMetadata(): Promise<Metadata> {
   const imageUrl = `${protocol}://${host}/og.png`;
 
   return {
-    title: "The Weekly Edit｜英文刊物双语精选",
-    description: "从英文新闻刊物中筛出真正值得读的议题与文章，以中英双语呈现。",
+    title: "The Weekly Edit | Bilingual news reading",
+    description: "A weekly English-first briefing, deeper reading and commentary, with Chinese translations.",
     icons: { icon: "/favicon.svg", shortcut: "/favicon.svg" },
     openGraph: {
-      title: "The Weekly Edit｜少读一点，看懂更多",
-      description: "每周新闻简报、领域解读与观点评论；原创中英双语导读，可回看历史各期。",
+      title: "The Weekly Edit | Read less. Understand more.",
+      description: "English-first news briefs, analysis and commentary with Chinese translations.",
       type: "website",
       images: [{ url: imageUrl, width: 1200, height: 630, alt: "The Weekly Edit" }],
     },
     twitter: {
       card: "summary_large_image",
       title: "The Weekly Edit",
-      description: "少读一点，看懂更多。",
+      description: "Read less. Understand more.",
       images: [imageUrl],
     },
   };
@@ -29,7 +29,7 @@ export async function generateMetadata(): Promise<Metadata> {
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="zh-CN">
+    <html lang="en">
       <body>{children}</body>
     </html>
   );

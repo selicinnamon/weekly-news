@@ -79,9 +79,13 @@ export type Edition = {
   period: string;
   status: string;
   lede: string;
+  ledeEn: string;
   observation: string;
+  observationEn: string;
   scope: string;
+  scopeEn: string;
   readingNote: string;
+  readingNoteEn: string;
   briefs: BriefItem[];
   topics: Topic[];
   commentary: CommentaryItem[];

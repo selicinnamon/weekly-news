@@ -4,9 +4,13 @@
   "period": "2026.09.21 — 09.27 · 北京时间",
   "status": "周报 · 09.29 更新",
   "lede": "从本周上传的 10 份 PDF 中筛选：先读 13 条简报，再沿着战争、生活成本与个人选择进入 8 个议题。",
+  "ledeEn": "Thirteen concise news briefs, eight deeper stories and three selected reads on conflict, living costs and personal choice.",
   "observation": "外交争取的是时间；能源和融资成本，把远方的战争带进日常生活。制度能否保护人的安全与选择，是另一条贯穿本期的线索。",
+  "observationEn": "Diplomacy buys time. Energy and borrowing costs bring distant conflicts into everyday life. This issue also asks whether institutions protect people’s safety and choices.",
   "scope": "事件窗口：北京时间 9 月 21 日至 27 日。以所提供刊物为主，辅以有限公开核查，不代表完整全球新闻覆盖。标为“本周刊物报道”的条目未确认具体发生日，不冒充当日突发。9 月 28 日与 10 月刊期的材料仅用于已发生事件或明确标注的跨期分析。FT 扫描版全文识别未完成，详见来源记录。",
+  "scopeEn": "Coverage period: September 21–27, Beijing time. This selection draws on the supplied publications and limited external checks; it is not a complete account of world news. Later-dated publications are used only for events within the period or clearly marked analysis.",
   "readingNote": "先读中东安全，再读运输成本，最后读生育选择。站内中文简报＋议题摘要预计约 10 分钟；完整双语导读约 35–45 分钟。下列时间为另行阅读英文原刊的估计。",
+  "readingNoteEn": "Begin with Middle East security, then follow the costs through freight, and finish with a review of fertility and choice. Times below estimate reading the original English articles.",
   "briefs": [
     {
       "id": "brief-20260927-iran",

@@ -19,19 +19,20 @@ test("server-renders the bilingual editorial site", async () => {
   assert.match(response.headers.get("content-type") ?? "", /^text\/html\b/i);
   const html = await response.text();
   assert.match(html, /The Weekly Edit/);
+  assert.match(html, /Read less/);
   assert.match(html, /少读一点/);
   assert.match(html, /News Summary/);
   assert.match(html, /Evidence Assessment/);
   assert.match(html, /Hegemon no more/);
   assert.match(html, /AI Agents Hit Two Federal Websites/);
   assert.match(html, /2026.09.21/);
-  assert.match(html, /来源与编辑记录/);
-  assert.match(html, /PDF 第/);
+  assert.match(html, /PDF p\./);
   assert.match(html, /本周新闻简报/);
   assert.match(html, /THE WEEK IN BRIEF/);
   assert.match(html, /观点与争鸣/);
-  assert.match(html, /最强反方检验/);
-  assert.match(html, /English brief/);
+  assert.match(html, /The strongest challenge/);
+  assert.match(html, /The week in brief/);
+  assert.doesNotMatch(html, /HOW IT WORKS|EDITORIAL RECORD/);
   assert.doesNotMatch(html, /codex-preview|react-loading-skeleton/);
 });
 
@@ -45,6 +46,7 @@ test("keeps the requested coverage, scoring and local filters", async () => {
   assert.match(page, /setQuery/);
   assert.match(page, /setSource/);
   assert.match(page, /setEditionId/);
+  assert.match(page, /scroll-snap|scrollBy/);
   assert.match(page, /searchParams.set\("edition"/);
   assert.match(layout, /og\.png/);
   assert.doesNotMatch(packageJson, /react-loading-skeleton/);
