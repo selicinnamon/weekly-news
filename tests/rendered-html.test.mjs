@@ -25,6 +25,9 @@ test("server-renders the bilingual editorial site", async () => {
   assert.match(html, /Evidence Assessment/);
   assert.match(html, /Reversion to the mine/);
   assert.match(html, /OpenAI Scraps AI Model Over Safety Concerns/);
+  assert.match(html, /NHS trusts jettison Palantir tools/);
+  assert.match(html, /OpenAI Withholds a Model as Agent Scrutiny Widens/);
+  assert.match(html, /55 websites/);
   assert.match(html, /2026.09.28/);
   assert.match(html, /PDF p\./);
   assert.match(html, /本周新闻简报/);
