@@ -19,8 +19,11 @@ test("server-renders the bilingual editorial site", async () => {
   assert.match(response.headers.get("content-type") ?? "", /^text\/html\b/i);
   const html = await response.text();
   assert.match(html, /The Weekly Edit/);
-  assert.match(html, /Read less/);
-  assert.match(html, /少读一点/);
+  assert.match(html, /The Truth must/);
+  assert.match(html, /dazzle gradually/);
+  assert.match(html, /真相的光，须徐徐照亮/);
+  assert.match(html, /Emily Dickinson/);
+  assert.doesNotMatch(html, /Read less|Understand more|少读一点/);
   assert.match(html, /News Summary/);
   assert.match(html, /Evidence Assessment/);
   assert.match(html, /Arms-twisting/);
@@ -88,7 +91,7 @@ test("keeps the requested coverage, scoring and local filters", async () => {
   assert.match(page, /setEditionId/);
   assert.match(page, /scroll-snap|scrollBy/);
   assert.match(page, /searchParams.set\("edition"/);
-  assert.match(layout, /og\.png/);
+  assert.match(layout, /quote-card\.png/);
   assert.doesNotMatch(packageJson, /react-loading-skeleton/);
 });
 

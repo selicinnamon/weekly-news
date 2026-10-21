@@ -205,8 +205,9 @@ export default function Home() {
       <section className="hero" id="top">
         <div className="edition-picker"><label htmlFor="edition">Edition / 阅读期数</label><select id="edition" value={editionId} onChange={event => selectEdition(event.target.value)}>{editions.map(e => <option key={e.id} value={e.id}>{e.label}</option>)}</select></div>
         <div className="hero-kicker">{edition.period}</div>
-        <h1>Read less.<br /><em>Understand more.</em></h1>
-        <p className="hero-translation" lang="zh-CN">少读一点，看懂更多。</p>
+        <h1>The Truth must<br /><em>dazzle gradually.</em></h1>
+        <p className="hero-translation" lang="zh-CN">真相的光，须徐徐照亮。</p>
+        <p className="hero-attribution">— Emily Dickinson</p>
         <p className="hero-lede">{edition.ledeEn}</p>
         <p className="hero-lede-zh" lang="zh-CN">{edition.lede}</p>
         <div className="hero-stats">
@@ -300,7 +301,7 @@ export default function Home() {
       </section>
 
       <footer>
-        <div className="brand footer-brand"><span className="brand-mark">W</span><span><b>The Weekly Edit</b><small>Read less. Understand more.</small></span></div>
+        <div className="brand footer-brand"><span className="brand-mark">W</span><span><b>The Weekly Edit</b><small>The Truth must dazzle gradually. — Emily Dickinson</small></span></div>
         <p>Original bilingual guides to the publications provided. This is a curated selection, not complete coverage of world news.</p>
         <p>{edition.label} · Browse other editions above</p>
       </footer>
