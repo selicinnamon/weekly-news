@@ -23,12 +23,14 @@ test("server-renders the bilingual editorial site", async () => {
   assert.match(html, /少读一点/);
   assert.match(html, /News Summary/);
   assert.match(html, /Evidence Assessment/);
-  assert.match(html, /Reversion to the mine/);
-  assert.match(html, /OpenAI Scraps AI Model Over Safety Concerns/);
-  assert.match(html, /NHS trusts jettison Palantir tools/);
-  assert.match(html, /OpenAI Withholds a Model as Agent Scrutiny Widens/);
-  assert.match(html, /55 websites/);
-  assert.match(html, /2026.09.28/);
+  assert.match(html, /Arms-twisting/);
+  assert.match(html, /Houthi Strikes Hit Aramco/);
+  assert.match(html, /School Roof Collapse/);
+  assert.match(html, /The Babies Left Behind in America/);
+  assert.match(html, /2026.10.12/);
+  assert.match(html, /value="2026-10-18" selected/);
+  assert.match(html, /value="2026-10-04"/);
+  assert.match(html, /value="2026-09-27"/);
   assert.match(html, /PDF p\./);
   assert.match(html, /本周新闻简报/);
   assert.match(html, /THE WEEK IN BRIEF/);
@@ -37,6 +39,41 @@ test("server-renders the bilingual editorial site", async () => {
   assert.match(html, /The week in brief/);
   assert.doesNotMatch(html, /HOW IT WORKS|EDITORIAL RECORD/);
   assert.doesNotMatch(html, /codex-preview|react-loading-skeleton/);
+});
+
+test("October 18 edition preserves bilingual provenance and long-form boundaries", async () => {
+  const issue = JSON.parse(await readFile(new URL("../data/editions/2026-10-18.json", import.meta.url), "utf8"));
+  assert.equal(issue.briefs.length, 13);
+  assert.equal(issue.topics.length, 8);
+  assert.equal(issue.topics.filter(t => t.deepRead).length, 3);
+  assert.equal(issue.topics.filter(t => t.featured).length, 8);
+  assert.equal(issue.commentary.length, 3);
+  assert.deepEqual(new Set(issue.topics.map(t => t.category)), new Set(["国际", "经济", "社会", "文化", "科技"]));
+  assert.equal(issue.topics.filter(t => t.category === "科技").length, 1);
+  const items = [...issue.briefs, ...issue.topics, ...issue.commentary];
+  assert.equal(new Set(items.map(t => t.id)).size, items.length);
+  for (const topic of issue.topics) {
+    assert.equal(topic.score, topic.importance + topic.quality);
+    assert.ok(topic.importance > 0 && topic.importance <= 60);
+    assert.ok(topic.quality > 0 && topic.quality <= 40);
+    for (const key of ["summaryEn", "summaryZh", "backgroundEn", "backgroundZh", "evidenceEn", "evidenceZh", "author", "pdfPages", "articleId"]) assert.ok(topic[key], `${topic.id}: ${key}`);
+    assert.equal(topic.argumentEn.length, topic.argumentZh.length);
+    assert.ok(topic.tags.every(pair => pair.length === 2 && pair.every(Boolean)));
+    assert.ok(topic.tags.every(([zh, en]) => /\p{Script=Han}/u.test(zh) && !/\p{Script=Han}/u.test(en)), `${topic.id}: Chinese/English tag order`);
+  }
+  for (const brief of issue.briefs) {
+    for (const key of ["summaryEn", "summaryZh", "titleEn", "titleZh", "source", "date"]) assert.ok(brief[key], `${brief.id}: ${key}`);
+  }
+  for (const comment of issue.commentary) {
+    for (const key of ["thesisEn", "thesisZh", "backgroundEn", "backgroundZh", "evidenceEn", "evidenceZh"]) assert.ok(comment[key], `${comment.id}: ${key}`);
+    assert.equal(comment.caseEn.length, comment.caseZh.length);
+  }
+  assert.equal(issue.sources.length, 23);
+  assert.equal(issue.sources.reduce((n, source) => n + source.pages, 0), 1120);
+  assert.match(issue.sources.find(s => s.publication === "Foreign Affairs").status, /truncated/);
+  assert.equal(issue.topics.filter(t => t.source === "The Atlantic").length, 1);
+  assert.equal(items.filter(t => t.source?.startsWith("Foreign Affairs")).length, 0);
+  assert.equal(issue.audit.length, 10);
 });
 
 test("keeps the requested coverage, scoring and local filters", async () => {
