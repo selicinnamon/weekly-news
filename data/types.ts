@@ -1,6 +1,18 @@
 export type Category = "本周重点" | "国际" | "经济" | "社会" | "文化" | "科技";
 
+export type OriginalReading = {
+  checkedAt: string;
+  links: {
+    publication: string;
+    url: string;
+    access: "free" | "subscription" | "gift";
+    verification: "publisher-page" | "publisher-reference" | "author-copy";
+    note?: string;
+  }[];
+};
+
 export type BriefItem = {
+  original?: OriginalReading;
   links?: {label: string; url: string}[];
   id: string;
   category: Exclude<Category, "本周重点">;
@@ -15,6 +27,7 @@ export type BriefItem = {
 };
 
 export type CommentaryItem = {
+  original?: OriginalReading;
   articleId?: string;
   caseEn?: string[];
   backgroundZh?: string;
@@ -40,6 +53,7 @@ export type CommentaryItem = {
 };
 
 export type Topic = {
+  original?: OriginalReading;
   articleId?: string;
   author?: string;
   genre?: string;

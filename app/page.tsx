@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 
-import type {Category, BriefItem, CommentaryItem, Topic} from "../data/types";
+import type {Category, BriefItem, CommentaryItem, Topic, OriginalReading} from "../data/types";
 import {editions} from "../data/editions";
 
 const categories: Category[] = ["本周重点", "国际", "经济", "社会", "文化", "科技"];
@@ -44,6 +44,7 @@ function BriefCard({ item, index }: { item: BriefItem; index: number }) {
         <details className="brief-why"><summary>Why it matters · 编辑说明</summary><p lang="zh-CN">{item.why}</p></details>
         <p className="brief-source">{item.sourceType === "外部核查" ? "External check" : "Publication"} · {item.source}</p>
         <SourceLinks links={item.links} />
+        <OriginalReadingLinks original={item.original} />
       </div>
     </article>
   );
@@ -52,6 +53,21 @@ function BriefCard({ item, index }: { item: BriefItem; index: number }) {
 function SourceLinks({links}: {links?: {label: string; url: string}[]}) {
   if (!links?.length) return null;
   return <ul className="source-links">{links.map(link => <li key={link.url}><a href={link.url} target="_blank" rel="noopener noreferrer">{link.label} ↗</a></li>)}</ul>;
+}
+
+function OriginalReadingLinks({original}: {original?: OriginalReading}) {
+  if (!original) return null;
+  if (!original.links.length) return <p className="original-unavailable">Original link not verified <span lang="zh-CN">· 暂未核实原文链接</span></p>;
+  const access = {free: "Free to read · 免费阅读", subscription: "May require subscription · 可能需要订阅", gift: "Official gift link · 官方赠阅"};
+  return <div className="original-reading" aria-label="Original reading / 原文阅读">
+    {original.links.map(link => <div className="original-reading-item" key={link.url}>
+      <a className="original-reading-link" href={link.url} target="_blank" rel="noopener noreferrer">
+        {link.verification === "author-copy" ? "Read author copy" : "Read original"} ↗ <span>{link.publication}</span>
+      </a>
+      <small className={`original-access access-${link.access}`}>{access[link.access]}</small>
+      {link.note && <small className="original-version-note">{link.note}</small>}
+    </div>)}
+  </div>;
 }
 
 function CommentaryCard({ item }: { item: CommentaryItem }) {
@@ -66,6 +82,7 @@ function CommentaryCard({ item }: { item: CommentaryItem }) {
       <div className="commentary-body">
         <h3>{item.titleEn}</h3>
         <p className="commentary-title-zh" lang="zh-CN">{item.titleZh}</p>
+        <OriginalReadingLinks original={item.original} />
         <details className="commentary-position"><summary>Author’s standpoint · 作者立场</summary><p lang="zh-CN">{item.position}</p></details>
         {item.tags && <div className="tags">{item.tags.map(([zh,en]) => <span key={zh}>{en}<i lang="zh-CN">{zh}</i></span>)}</div>}
         <BilingualBlock label="核心主张" enLabel="Central Claim" zh={<p>{item.thesisZh}</p>} en={<p>{item.thesisEn}</p>} />
@@ -104,6 +121,7 @@ function TopicCard({ topic }: { topic: Topic }) {
         <ScoreRing score={topic.score} />
       </div>
 
+      <OriginalReadingLinks original={topic.original} />
       <div className="tags" aria-label="Topic tags / 主题标签">
         {topic.tags.map(([zh, en]) => <span key={zh}>{en}<i lang="zh-CN">{zh}</i></span>)}
       </div>

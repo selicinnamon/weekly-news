@@ -25,6 +25,11 @@ test("server-renders the bilingual editorial site", async () => {
   assert.match(html, /Emily Dickinson/);
   assert.doesNotMatch(html, /Read less|Understand more|少读一点/);
   assert.match(html, /News Summary/);
+  assert.match(html, /Read original/);
+  assert.match(html, /Read author copy/);
+  assert.match(html, /May require subscription/);
+  assert.match(html, /Free to read/);
+  assert.match(html, /Original link not verified/);
   assert.match(html, /Evidence Assessment/);
   assert.match(html, /You win some, you lose some/);
   assert.match(html, /At Least 68 Killed in Spanish/);
@@ -61,6 +66,20 @@ for (const [date, count, pages] of [["2026-10-25", 26, 1304], ["2026-11-01", 27,
     assert.deepEqual(new Set(issue.topics.map(t => t.category)), new Set(["国际", "经济", "社会", "文化", "科技"]));
     for (const category of ["国际", "经济", "社会"]) assert.ok(issue.topics.some(t => t.category === category && t.deepRead));
     const items = [...issue.briefs, ...issue.topics, ...issue.commentary];
+    assert.equal(items.filter(t => t.original?.links.length).length, 13);
+    assert.ok(issue.topics.filter(t => t.deepRead).every(t => t.original.links.length));
+    for (const item of items) {
+      assert.equal(item.original.checkedAt, "2026-11-02");
+      for (const link of item.original.links) {
+        const url = new URL(link.url);
+        assert.equal(url.protocol, "https:");
+        assert.ok(["www.economist.com", "www.ft.com", "www.wsj.com", "www.theguardian.com", "www.nytimes.com", "www.bloomberg.com", "www.bridgewater.com"].includes(url.hostname));
+        assert.ok(url.pathname.length > 10);
+        assert.ok(["free", "subscription", "gift"].includes(link.access));
+        assert.ok(["publisher-page", "publisher-reference", "author-copy"].includes(link.verification));
+        assert.ok(!url.searchParams.has("shareToken"));
+      }
+    }
     assert.equal(new Set(items.map(t => t.id)).size, items.length);
     for (const t of issue.topics) {
       assert.equal(t.score, t.importance + t.quality);
