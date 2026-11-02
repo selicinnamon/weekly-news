@@ -1,10 +1,12 @@
 import type {Edition} from "./types";
+import november1 from "./editions/2026-11-01.json";
+import october25 from "./editions/2026-10-25.json";
 import october18 from "./editions/2026-10-18.json";
 import {october4} from "./editions/2026-10-04";
 import current from "./editions/2026-09-27.json";
 import {briefs, topics, commentary} from "./editions/pilot";
 
-export const editions: Edition[] = [october18 as Edition, october4, current as Edition, {
+export const editions: Edition[] = [november1 as Edition, october25 as Edition, october18 as Edition, october4, current as Edition, {
   id: "pilot",
   label: "历史样刊 · 2026.08.15–09.07",
   period: "PILOT EDITION · 2026.08.15 — 09.07",

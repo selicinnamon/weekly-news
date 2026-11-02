@@ -15,10 +15,19 @@ for pdf in sorted(source.rglob('*.pdf')):
         inventory.append(record)
         print(json.dumps(record), flush=True)
         continue
-    pages = [page.extract_text() or '' for page in reader.pages]
+    pages = []
+    failures = []
+    for number, page in enumerate(reader.pages, 1):
+        try:
+            pages.append(page.extract_text() or '')
+        except Exception as error:
+            pages.append('')
+            failures.append({'page': number, 'error': str(error)})
     output = destination / (pdf.stem + '.txt')
     output.write_text('\n'.join(f'\n=== PDF PAGE {i} ===\n{text}' for i, text in enumerate(pages, 1)))
     record = {'path': str(pdf), 'pages': len(pages), 'characters': sum(map(len, pages)), 'text': str(output)}
+    if failures:
+        record['extractionFailures'] = failures
     inventory.append(record)
     print(json.dumps(record), flush=True)
 (destination / 'inventory.json').write_text(json.dumps(inventory, ensure_ascii=False, indent=2))
