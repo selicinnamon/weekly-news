@@ -39,6 +39,8 @@ test("server-renders the bilingual editorial site", async () => {
   assert.match(html, /PDF p\./);
   assert.match(html, /本周新闻简报/);
   assert.match(html, /THE WEEK IN BRIEF/);
+  assert.match(html, /href="#highlights"[^>]*>Highlights<\/a>/);
+  assert.match(html, /id="highlights"/);
   assert.match(html, /观点与争鸣/);
   assert.match(html, /The strongest challenge/);
   assert.match(html, /The week in brief/);

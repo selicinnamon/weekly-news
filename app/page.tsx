@@ -198,6 +198,7 @@ export default function Home() {
         <div className="header-actions">
           <span className="edition-status"><i /> {editionId === editions[0].id ? "CURRENT ISSUE" : "ARCHIVE"}</span>
           <a href="#brief">Brief</a>
+          <a href="#highlights" onClick={() => { setActive("本周重点"); setSource("全部刊物"); setQuery(""); }}>Highlights</a>
           <a href="#commentary">Commentary</a>
         </div>
       </header>
@@ -241,7 +242,7 @@ export default function Home() {
         <p className="brief-disclaimer">{edition.scopeEn}</p>
       </section>
 
-      <section className="controls" aria-label="Content filters">
+      <section className="controls" id="highlights" aria-label="Content filters">
         <nav className="category-tabs">
           {categories.map((category) => (
             <button key={category} className={active === category ? "active" : ""} onClick={() => setActive(category)}>{categoryEn[category]}<small lang="zh-CN">{category}</small></button>
