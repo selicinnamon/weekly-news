@@ -1,5 +1,20 @@
 export type Category = "本周重点" | "国际" | "经济" | "社会" | "文化" | "科技";
 
+export type EditorialImage = {
+  src: string;
+  width: number;
+  height: number;
+  captionEn: string;
+  captionZh: string;
+  kind: "file" | "portrait";
+  author: string;
+  sourceUrl: string;
+  license: string;
+  licenseUrl: string;
+  capturedAt: string;
+  checkedAt: string;
+};
+
 export type OriginalReading = {
   checkedAt: string;
   links: {

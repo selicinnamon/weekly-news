@@ -70,6 +70,17 @@ a { color: inherit; }
 .brief-list { display: flex; gap: 20px; overflow-x: auto; scroll-snap-type: x mandatory; overscroll-behavior-inline: contain; scrollbar-width: thin; padding: 28px 0 16px; }
 .brief-card { flex: 0 0 calc((100% - 20px)/2); display: grid; grid-template-columns: 38px 1fr; gap: 16px; padding: 26px; border: 1px solid var(--line); background: var(--paper); scroll-snap-align: start; align-content: start; }
 .brief-number { font: italic 18px/1 Georgia, serif; color: var(--red); padding-top: 3px; }
+.editorial-figure { margin: 0; min-width: 0; }
+.brief-card > .editorial-figure { grid-column: 1 / -1; margin: -26px -26px 6px; }
+.editorial-figure img { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; }
+.editorial-figure figcaption { display: grid; gap: 3px; padding: 9px 12px; font-size: 10px; line-height: 1.5; color: var(--muted); }
+.image-credit { font-size: 9px; }
+.image-credit a { color: inherit; text-underline-offset: 2px; }
+.author-portraits { display: flex; flex-wrap: wrap; gap: 12px; }
+.author-portraits:empty { display: none; }
+.editorial-portrait { margin-top: 20px; max-width: 180px; }
+.editorial-portrait img { aspect-ratio: 4 / 5; object-position: center 25%; filter: grayscale(100%); }
+.editorial-portrait figcaption { padding: 8px 0 0; }
 .brief-meta { display: flex; align-items: center; flex-wrap: wrap; gap: 10px; color: var(--muted); font-size: 10px; text-transform: uppercase; letter-spacing: .08em; }
 .brief-meta .category-pill { color: white; }
 .external-check { border: 1px solid var(--forest); color: var(--forest); padding: 4px 7px; font-weight: 700; }
@@ -211,6 +222,7 @@ footer p:last-child { text-align: right; }
   .brief-navigation button { width: 34px; height: 34px; }
   .brief-card { flex-basis: 88%; grid-template-columns: 30px 1fr; gap: 10px; padding: 20px; }
   .brief-card h3 { font-size: 21px; }
+  .brief-card > .editorial-figure { margin: -20px -20px 4px; }
   .commentary-card { grid-template-columns: 1fr; padding: 22px; }
   .commentary-source { border-right: 0; border-bottom: 1px solid var(--line); padding: 0 0 20px; }
   .commentary-test { grid-template-columns: 1fr; }

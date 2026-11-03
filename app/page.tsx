@@ -2,7 +2,8 @@
 
 import { useEffect, useRef, useState } from "react";
 
-import type {Category, BriefItem, CommentaryItem, Topic, OriginalReading} from "../data/types";
+import type {Category, BriefItem, CommentaryItem, Topic, OriginalReading, EditorialImage} from "../data/types";
+import editorialImages from "../data/editorial-images.json";
 import {editions} from "../data/editions";
 
 const categories: Category[] = ["本周重点", "国际", "经济", "社会", "文化", "科技"];
@@ -27,9 +28,25 @@ function BilingualBlock({ label, enLabel, zh, en }: { label: string; enLabel: st
   );
 }
 
+const imageRegistry = editorialImages as Record<string, EditorialImage[]>;
+
+function EditorialFigure({image}: {image: EditorialImage}) {
+  const [failed, setFailed] = useState(false);
+  if (failed) return null;
+  return <figure className={`editorial-figure editorial-${image.kind}`}>
+    <img src={image.src} width={image.width} height={image.height} alt={image.captionEn} loading="lazy" decoding="async" onError={() => setFailed(true)} />
+    <figcaption>
+      <span>{image.kind === "file" && "FILE PHOTO · "}{image.captionEn}</span>
+      <span lang="zh-CN">{image.kind === "file" && "资料图 · "}{image.captionZh}</span>
+      <span className="image-credit"><a href={image.sourceUrl} target="_blank" rel="noopener noreferrer">{image.author}</a> · <a href={image.licenseUrl} target="_blank" rel="noopener noreferrer">{image.license}</a> · {image.kind === "portrait" ? "Cropped, grayscale / 裁切、灰度" : "Cropped / 裁切"}</span>
+    </figcaption>
+  </figure>;
+}
+
 function BriefCard({ item, index }: { item: BriefItem; index: number }) {
   return (
     <article className="brief-card" id={item.id}>
+      {imageRegistry[item.id]?.map(image => <EditorialFigure key={image.src} image={image} />)}
       <div className="brief-number">{String(index + 1).padStart(2, "0")}</div>
       <div className="brief-copy">
         <div className="brief-meta">
@@ -75,6 +92,7 @@ function CommentaryCard({ item }: { item: CommentaryItem }) {
     <article className="commentary-card" id={item.id}>
       <div className="commentary-source">
         <span>COMMENTARY</span>
+        <div className="author-portraits">{imageRegistry[item.id]?.map(image => <EditorialFigure key={image.src} image={image} />)}</div>
         <p>{item.author}</p>
         <small>{item.authorRole}</small>
         <small>{item.source} · {item.pages}</small>
