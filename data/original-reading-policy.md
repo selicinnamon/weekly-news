@@ -1,7 +1,7 @@
 # Original reading links
 
 Added to the 2026-10-25 and 2026-11-01 editions on 2026-11-02.
-Each has 13 of 24 cards matched, including all three deep reads. Unmatched cards explicitly say “Original link not verified”; they are not linked to similar coverage or search results.
+Each has 13 of 24 cards matched, including all three deep reads. Unmatched cards show no original-reading entry; they are not linked to similar coverage or search results. Verification status remains in the data rather than on the public page.
 
 ## Weekly publication checklist
 

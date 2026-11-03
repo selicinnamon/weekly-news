@@ -57,7 +57,7 @@ function SourceLinks({links}: {links?: {label: string; url: string}[]}) {
 
 function OriginalReadingLinks({original}: {original?: OriginalReading}) {
   if (!original) return null;
-  if (!original.links.length) return <p className="original-unavailable">Original link not verified <span lang="zh-CN">· 暂未核实原文链接</span></p>;
+  if (!original.links.length) return null;
   const access = {free: "Free to read · 免费阅读", subscription: "May require subscription · 可能需要订阅", gift: "Official gift link · 官方赠阅"};
   return <div className="original-reading" aria-label="Original reading / 原文阅读">
     {original.links.map(link => <div className="original-reading-item" key={link.url}>

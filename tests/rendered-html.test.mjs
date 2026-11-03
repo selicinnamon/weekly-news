@@ -29,7 +29,7 @@ test("server-renders the bilingual editorial site", async () => {
   assert.match(html, /Read author copy/);
   assert.match(html, /May require subscription/);
   assert.match(html, /Free to read/);
-  assert.match(html, /Original link not verified/);
+  assert.doesNotMatch(html, /Original link not verified|暂未核实原文链接/);
   assert.match(html, /Evidence Assessment/);
   assert.match(html, /You win some, you lose some/);
   assert.match(html, /At Least 68 Killed in Spanish/);
