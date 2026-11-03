@@ -6,13 +6,14 @@ export type EditorialImage = {
   height: number;
   captionEn: string;
   captionZh: string;
-  kind: "file" | "portrait";
+  kind: "file" | "news" | "portrait";
   author: string;
   sourceUrl: string;
   license: string;
   licenseUrl: string;
   capturedAt: string;
   checkedAt: string;
+  attribution?: string;
 };
 
 export type OriginalReading = {

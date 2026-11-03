@@ -30,38 +30,45 @@ function BilingualBlock({ label, enLabel, zh, en }: { label: string; enLabel: st
 
 const imageRegistry = editorialImages as Record<string, EditorialImage[]>;
 
-function EditorialFigure({image}: {image: EditorialImage}) {
+function EditorialFigure({image, compact = false}: {image: EditorialImage; compact?: boolean}) {
   const [failed, setFailed] = useState(false);
   if (failed) return null;
   return <figure className={`editorial-figure editorial-${image.kind}`}>
     <img src={image.src} width={image.width} height={image.height} alt={image.captionEn} loading="lazy" decoding="async" onError={() => setFailed(true)} />
     <figcaption>
-      <span>{image.kind === "file" && "FILE PHOTO · "}{image.captionEn}</span>
-      <span lang="zh-CN">{image.kind === "file" && "资料图 · "}{image.captionZh}</span>
+      {compact ? <details className="photo-details"><summary>Photo info · 图注</summary><span>{image.captionEn}</span><span lang="zh-CN">{image.captionZh}</span>{image.attribution && <span>{image.attribution}</span>}</details> : <><span>{image.kind === "file" && "FILE PHOTO · "}{image.captionEn}</span><span lang="zh-CN">{image.kind === "file" && "资料图 · "}{image.captionZh}</span></>}
       <span className="image-credit"><a href={image.sourceUrl} target="_blank" rel="noopener noreferrer">{image.author}</a> · <a href={image.licenseUrl} target="_blank" rel="noopener noreferrer">{image.license}</a> · {image.kind === "portrait" ? "Cropped, grayscale / 裁切、灰度" : "Cropped / 裁切"}</span>
+      {!compact && image.attribution && <details className="image-attribution"><summary>Attribution · 署名说明</summary><span>{image.attribution}</span></details>}
     </figcaption>
   </figure>;
 }
 
 function BriefCard({ item, index }: { item: BriefItem; index: number }) {
+  const [expanded, setExpanded] = useState(false);
   return (
     <article className="brief-card" id={item.id}>
-      {imageRegistry[item.id]?.map(image => <EditorialFigure key={image.src} image={image} />)}
-      <div className="brief-number">{String(index + 1).padStart(2, "0")}</div>
       <div className="brief-copy">
+        <div className="brief-lead">
+        <div>
         <div className="brief-meta">
+          <span className="brief-number">{String(index + 1).padStart(2, "0")}</span>
           <span className={`category-pill cat-${item.category}`}>{categoryEn[item.category]}</span>
           <span>{item.date}</span>
           {item.sourceType === "外部核查" && <span className="external-check">External check</span>}
         </div>
         <h3>{item.titleEn}</h3>
         <p className="brief-title-zh" lang="zh-CN">{item.titleZh}</p>
-        <p className="brief-summary">{item.summaryEn}</p>
-        <p className="brief-summary-zh" lang="zh-CN">{item.summaryZh}</p>
-        <details className="brief-why"><summary>Why it matters · 编辑说明</summary><p lang="zh-CN">{item.why}</p></details>
+        </div>
+        {imageRegistry[item.id]?.filter(image => image.kind === "news").map(image => <EditorialFigure key={image.src} image={image} compact />)}
+        </div>
+        <p className={`brief-summary${expanded ? "" : " brief-summary-preview"}`} id={`${item.id}-summary`}>{item.summaryEn}</p>
+        <button className="brief-expand" aria-expanded={expanded} aria-controls={`${item.id}-summary`} onClick={() => setExpanded(!expanded)}>{expanded ? "Show less · 收起" : "Read full brief · 完整简报"}</button>
+        <details className="brief-translation"><summary>中文摘要</summary><p className="brief-summary-zh" lang="zh-CN">{item.summaryZh}</p></details>
+        <details className="brief-why"><summary>Sources & context · 来源与背景</summary><p lang="zh-CN">{item.why}</p>
         <p className="brief-source">{item.sourceType === "外部核查" ? "External check" : "Publication"} · {item.source}</p>
         <SourceLinks links={item.links} />
         <OriginalReadingLinks original={item.original} />
+        </details>
       </div>
     </article>
   );
@@ -263,7 +270,7 @@ export default function Home() {
         <div className="brief-heading">
           <div>
             <span>THE WEEK IN BRIEF · ABOUT 8 MINUTES</span>
-            <h2>What happened<br />this week</h2>
+            <h2>What happened this week</h2>
             <p className="heading-translation" lang="zh-CN">本周新闻简报</p>
           </div>
           <div className="brief-navigation" aria-label="Brief navigation">
@@ -275,7 +282,7 @@ export default function Home() {
         <div className="brief-list" ref={briefRail} onScroll={updateBriefIndex} role="region" aria-roledescription="carousel" aria-label="The week in brief">
           {briefs.map((item, index) => <BriefCard item={item} index={index} key={item.id} />)}
         </div>
-        <p className="brief-disclaimer">{edition.scopeEn}</p>
+        <details className="brief-disclaimer"><summary>Coverage note · 收录范围</summary><p>{edition.scopeEn}</p></details>
       </section>
 
       <section className="controls" id="highlights" aria-label="Content filters">

@@ -1,420 +1,4 @@
 {
-  "b-20261025-france": [
-    {
-      "src": "/images/editorial/franceHistoric.jpg",
-      "width": 960,
-      "height": 519,
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Notre_Dame_Paris_front_facade_lower.jpg",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-      "author": "Benh LIEU SONG",
-      "capturedAt": "2007-10-28",
-      "captionEn": "Notre-Dame’s west façade, Paris, 2007; a location image, not a protest scene.",
-      "captionZh": "巴黎圣母院西立面，2007年；地点资料图，非抗议现场。",
-      "kind": "file",
-      "checkedAt": "2026-11-03"
-    }
-  ],
-  "b-20261025-saudi": [
-    {
-      "src": "/images/editorial/saudi.jpg",
-      "width": 960,
-      "height": 647,
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Riyadh_Skyline_New.jpg",
-      "license": "Public domain",
-      "author": "Muhaidib (mo)",
-      "capturedAt": "7 May 2009 (original upload date)",
-      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
-      "captionEn": "Riyadh skyline; uploaded in 2009, capture date unspecified.",
-      "captionZh": "利雅得天际线；2009年上传，拍摄日期未注明。",
-      "kind": "file",
-      "checkedAt": "2026-11-03"
-    }
-  ],
-  "b-20261025-gaza": [
-    {
-      "src": "/images/editorial/gazaCity.jpg",
-      "width": 960,
-      "height": 348,
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gaza_Port_02.jpg",
-      "license": "CC BY-SA 2.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
-      "author": "Gisha Access",
-      "capturedAt": "2008-06-08 18:10:55",
-      "captionEn": "Gaza’s port, 2008; not current conditions or an aid distribution.",
-      "captionZh": "加沙港，2008年；并非当前状况或援助发放现场。",
-      "kind": "file",
-      "checkedAt": "2026-11-03"
-    }
-  ],
-  "b-20261025-sudan": [
-    {
-      "src": "/images/editorial/sudan.jpg",
-      "width": 960,
-      "height": 672,
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:%D8%A7%D9%84%D8%AE%D8%B1%D8%B7%D9%88%D9%85-%D8%AC%D8%B2%D9%8A%D8%B1%D8%A9_%D8%AA%D9%88%D8%AA%D9%8A.jpg",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-      "author": "محسن الفكي",
-      "capturedAt": "2014-01-23 22:56:12",
-      "captionEn": "Khartoum and Tuti Island, 2014; before the current war.",
-      "captionZh": "喀土穆与图蒂岛，2014年；拍于当前战争之前。",
-      "kind": "file",
-      "checkedAt": "2026-11-03"
-    }
-  ],
-  "b-20261025-ukraine": [
-    {
-      "src": "/images/editorial/ukraine.jpg",
-      "width": 960,
-      "height": 313,
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:%D0%9F%D0%B0%D0%BD%D0%BE%D1%80%D0%B0%D0%BC%D0%B0_%D0%BD%D0%B0_%D0%9C%D0%BE%D1%81%D1%82_%D0%9C%D0%B5%D1%82%D1%80%D0%BE_%D0%B8_%D0%BD%D0%B0%D0%B1%D0%B5%D1%80%D0%B5%D0%B6%D0%BD%D1%83%D1%8E_-_View_of_the_Metro_Bridge_and_the_waterfront_(9641711845).jpg",
-      "license": "CC BY-SA 2.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
-      "author": "spoilt.exile from Kiev, Ukraine",
-      "capturedAt": "2013-09-01 13:52",
-      "captionEn": "Kyiv’s Metro Bridge and waterfront, 2013; not the reported strikes.",
-      "captionZh": "基辅地铁桥与河岸，2013年；非本次空袭现场。",
-      "kind": "file",
-      "checkedAt": "2026-11-03"
-    }
-  ],
-  "b-20261025-italy": [
-    {
-      "src": "/images/editorial/italy.jpg",
-      "width": 960,
-      "height": 834,
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:20110724_Milan_Cathedral_5260.jpg",
-      "license": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-      "author": "Jakub Hałun",
-      "capturedAt": "Taken on 24 July 2011, 15:08",
-      "captionEn": "Milan Cathedral, 2011; a city view, not the reported unrest.",
-      "captionZh": "米兰大教堂，2011年；城市资料图，非本次骚乱现场。",
-      "kind": "file",
-      "checkedAt": "2026-11-03"
-    }
-  ],
-  "b-20261025-alberta": [
-    {
-      "src": "/images/editorial/alberta.jpg",
-      "width": 960,
-      "height": 640,
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Alberta_Legislature_Building,_June_7,_2024.jpg",
-      "license": "CC0",
-      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
-      "author": "D. Benjamin Miller",
-      "capturedAt": "Taken on 7 June 2024, 16:16:32",
-      "captionEn": "Alberta Legislature Building, Edmonton, 2024.",
-      "captionZh": "埃德蒙顿的阿尔伯塔省议会大楼，2024年。",
-      "kind": "file",
-      "checkedAt": "2026-11-03"
-    }
-  ],
-  "b-20261025-china": [
-    {
-      "src": "/images/editorial/china.jpg",
-      "width": 960,
-      "height": 720,
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Shanghai_skyline_waterfront_pudong_A235423.jpg",
-      "license": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-      "author": "Ermell",
-      "capturedAt": "2007-10-23 09:16:41",
-      "captionEn": "Shanghai’s Pudong skyline, 2007.",
-      "captionZh": "上海浦东天际线，2007年。",
-      "kind": "file",
-      "checkedAt": "2026-11-03"
-    }
-  ],
-  "b-20261025-markets": [
-    {
-      "src": "/images/editorial/markets.jpg",
-      "width": 960,
-      "height": 720,
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Wall_Street_-_New_York_Stock_Exchange.jpg",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-      "author": "Carlos Delgado",
-      "capturedAt": "Taken on 25 July 2012, 22:15:54",
-      "captionEn": "New York Stock Exchange, 2012.",
-      "captionZh": "纽约证券交易所，2012年。",
-      "kind": "file",
-      "checkedAt": "2026-11-03"
-    }
-  ],
-  "b-20261025-ukprices": [
-    {
-      "src": "/images/editorial/ukprices.jpg",
-      "width": 960,
-      "height": 642,
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bank_of_England,_2013_(1).JPG",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-      "author": "Elisa.rolle",
-      "capturedAt": "2013-03-23 01:04:07",
-      "captionEn": "Bank of England, London, 2013.",
-      "captionZh": "伦敦的英格兰银行，2013年。",
-      "kind": "file",
-      "checkedAt": "2026-11-03"
-    }
-  ],
-  "b-20261025-care": [
-    {
-      "src": "/images/editorial/budget.jpg",
-      "width": 960,
-      "height": 720,
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Westminster_palace.jpg",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
-      "author": "DaniKauf",
-      "capturedAt": "2005-02-15",
-      "captionEn": "Palace of Westminster, 2005; context for public policy, not a care home.",
-      "captionZh": "威斯敏斯特宫，2005年；公共政策主题配图，并非养老院。",
-      "kind": "file",
-      "checkedAt": "2026-11-03"
-    }
-  ],
-  "b-20261025-online": [
-    {
-      "src": "/images/editorial/online.jpg",
-      "width": 960,
-      "height": 640,
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Black_smartphone_in_hand_(Unsplash).jpg",
-      "license": "CC0",
-      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
-      "author": "Dennis Cortés cortes",
-      "capturedAt": "2016-10-09",
-      "captionEn": "A smartphone, 2016; illustrative, not a study participant.",
-      "captionZh": "智能手机，2016年；主题配图，并非调查参与者。",
-      "kind": "file",
-      "checkedAt": "2026-11-03"
-    }
-  ],
-  "b-20261025-php": [
-    {
-      "src": "/images/editorial/php.jpg",
-      "width": 960,
-      "height": 1443,
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Servers_in_a_Rack.jpg",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-      "author": "Abigor",
-      "capturedAt": "2011-02-02",
-      "captionEn": "Server racks, 2011; illustrative, not an affected system.",
-      "captionZh": "服务器机架，2011年；主题配图，并非受攻击系统。",
-      "kind": "file",
-      "checkedAt": "2026-11-03"
-    }
-  ],
-  "b-20261101-spain": [
-    {
-      "src": "/images/editorial/spain.jpg",
-      "width": 960,
-      "height": 689,
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:RENFE_AVE_S-103_15.jpg",
-      "license": "CC BY 2.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-      "author": "Bonaventura Leris from Barcelona",
-      "capturedAt": "2009-07-02 19:08",
-      "captionEn": "A Renfe AVE train near El Prat, 2009; not the train involved in the reported collision.",
-      "captionZh": "埃尔普拉特附近的Renfe AVE列车，2009年；并非报道中的事故列车。",
-      "kind": "file",
-      "checkedAt": "2026-11-03"
-    }
-  ],
-  "b-20261101-israel": [
-    {
-      "src": "/images/editorial/israel.jpg",
-      "width": 960,
-      "height": 640,
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Knesset_building_20180705.jpg",
-      "license": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-      "author": "Suicasmo",
-      "capturedAt": "2018-07-05 09:50:43",
-      "captionEn": "The Knesset building in Jerusalem, 2018.",
-      "captionZh": "耶路撒冷的以色列议会大楼，2018年。",
-      "kind": "file",
-      "checkedAt": "2026-11-03"
-    }
-  ],
-  "b-20261101-binance": [
-    {
-      "src": "/images/editorial/binance.jpg",
-      "width": 960,
-      "height": 641,
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Close-up_of_a_Bitcoin_physical_coin_in_a_womans_hand_and_a_laptop_on_her_lap.jpg",
-      "license": "CC BY 2.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-      "author": "Shixart1985",
-      "capturedAt": "2021-10-30 14:20:18",
-      "captionEn": "A Bitcoin token beside a laptop; illustrative, not evidence of the reported theft.",
-      "captionZh": "笔记本电脑旁的比特币实体代币；主题配图，并非本次盗窃的证据。",
-      "kind": "file",
-      "checkedAt": "2026-11-03"
-    }
-  ],
-  "b-20261101-brazil": [
-    {
-      "src": "/images/editorial/brazil.jpg",
-      "width": 960,
-      "height": 605,
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Brazilian_National_Congress.jpg",
-      "license": "CC BY-SA 2.5",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
-      "author": "Eurico Zimbres",
-      "capturedAt": "2006-01-19",
-      "captionEn": "Brazil’s National Congress, Brasília, 2006.",
-      "captionZh": "巴西利亚的巴西国会大厦，2006年。",
-      "kind": "file",
-      "checkedAt": "2026-11-03"
-    }
-  ],
-  "b-20261101-serbia": [
-    {
-      "src": "/images/editorial/serbia.jpg",
-      "width": 960,
-      "height": 640,
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:National_Assembly_of_Serbia_building_20180227-1.jpg",
-      "license": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-      "author": "Suicasmo",
-      "capturedAt": "2018-02-27 12:10:29",
-      "captionEn": "Serbia’s National Assembly, Belgrade, 2018.",
-      "captionZh": "贝尔格莱德的塞尔维亚国民议会大楼，2018年。",
-      "kind": "file",
-      "checkedAt": "2026-11-03"
-    }
-  ],
-  "b-20261101-iran": [
-    {
-      "src": "/images/editorial/iran.jpg",
-      "width": 960,
-      "height": 243,
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tehran_in_a_clean_day.jpg",
-      "license": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-      "author": "Amirpashaei",
-      "capturedAt": "Taken on 2 April 2019",
-      "captionEn": "Northern Tehran after rain, 2019.",
-      "captionZh": "雨后的德黑兰北部，2019年。",
-      "kind": "file",
-      "checkedAt": "2026-11-03"
-    }
-  ],
-  "b-20261101-budget": [
-    {
-      "src": "/images/editorial/budget.jpg",
-      "width": 960,
-      "height": 720,
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Westminster_palace.jpg",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
-      "author": "DaniKauf",
-      "capturedAt": "2005-02-15",
-      "captionEn": "Palace of Westminster, London, 2005.",
-      "captionZh": "伦敦威斯敏斯特宫，2005年。",
-      "kind": "file",
-      "checkedAt": "2026-11-03"
-    }
-  ],
-  "b-20261101-fed": [
-    {
-      "src": "/images/editorial/fed.jpg",
-      "width": 960,
-      "height": 653,
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Eccles_Building_(26088200676).jpg",
-      "license": "Public domain",
-      "author": "Federalreserve",
-      "capturedAt": "2011-03-29 11:47",
-      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
-      "captionEn": "The Federal Reserve’s Eccles Building, Washington, 2011.",
-      "captionZh": "华盛顿的美联储埃克尔斯大楼，2011年。",
-      "kind": "file",
-      "checkedAt": "2026-11-03"
-    }
-  ],
-  "b-20261101-gdp": [
-    {
-      "src": "/images/editorial/gdp.jpg",
-      "width": 960,
-      "height": 524,
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:View_of_Port_of_Los_Angeles_with_container_ships.jpg",
-      "license": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-      "author": "Downtowngal",
-      "capturedAt": "2021-09-18 14:59:59",
-      "captionEn": "Container shipping at the Port of Los Angeles, 2021.",
-      "captionZh": "洛杉矶港的集装箱运输，2021年。",
-      "kind": "file",
-      "checkedAt": "2026-11-03"
-    }
-  ],
-  "b-20261101-alphabet": [
-    {
-      "src": "/images/editorial/alphabet.jpg",
-      "width": 960,
-      "height": 540,
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mountain_View_(CA,_USA),_Charleston_Road,_Abstellplatz_f%C3%BCr_Google-Fahrr%C3%A4der_--_2022_--_2898.jpg",
-      "license": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-      "author": "Dietmar Rabich",
-      "capturedAt": "Taken on 30 June 2022, 11:46",
-      "captionEn": "Google bicycle parking in Mountain View, 2022.",
-      "captionZh": "山景城的Google自行车停车区，2022年。",
-      "kind": "file",
-      "checkedAt": "2026-11-03"
-    }
-  ],
-  "b-20261101-carers": [
-    {
-      "src": "/images/editorial/budget.jpg",
-      "width": 960,
-      "height": 720,
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Westminster_palace.jpg",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
-      "author": "DaniKauf",
-      "capturedAt": "2005-02-15",
-      "captionEn": "Palace of Westminster, 2005; context for UK welfare policy.",
-      "captionZh": "威斯敏斯特宫，2005年；英国福利政策主题配图。",
-      "kind": "file",
-      "checkedAt": "2026-11-03"
-    }
-  ],
-  "b-20261101-alpha": [
-    {
-      "src": "/images/editorial/alpha.jpg",
-      "width": 960,
-      "height": 584,
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Empty_classroom_2020.jpg",
-      "license": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-      "author": "Dobrislava",
-      "capturedAt": "2020-03-18 09:52:55",
-      "captionEn": "An empty classroom in Kikinda, Serbia, 2020; not an Alpha school.",
-      "captionZh": "塞尔维亚基金达的一间空教室，2020年；并非Alpha学校。",
-      "kind": "file",
-      "checkedAt": "2026-11-03"
-    }
-  ],
-  "b-20261101-sport": [
-    {
-      "src": "/images/editorial/sport.jpg",
-      "width": 960,
-      "height": 640,
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:NC_Courage_vs_Washington_Spirit_(Nov_2024)_005.jpg",
-      "license": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-      "author": "Hameltion",
-      "capturedAt": "2024-11-02 19:13:55",
-      "captionEn": "North Carolina Courage v Washington Spirit, November 2024; an earlier NWSL match.",
-      "captionZh": "北卡罗来纳勇气队对华盛顿精神队，2024年11月；此前的美国女足联赛比赛。",
-      "kind": "file",
-      "checkedAt": "2026-11-03"
-    }
-  ],
   "c-20261101-aiguardrails": [
     {
       "src": "/images/editorial/nir.png",
@@ -445,6 +29,71 @@
       "captionZh": "安妮-玛丽·斯劳特，2013年摄于新美国基金会。",
       "kind": "portrait",
       "checkedAt": "2026-11-03"
+    }
+  ],
+  "b-20261025-france": [
+    {
+      "src": "/images/editorial/france-20261024.jpg",
+      "width": 960,
+      "height": 640,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Manifestation_parisienne_du_24_octobre_2026_(20).jpg",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "author": "Jules*",
+      "capturedAt": "2026-10-24 14:40:30",
+      "kind": "news",
+      "captionEn": "Demonstrators march in Paris, 24 October 2026.",
+      "captionZh": "巴黎示威游行，2026年10月24日。",
+      "checkedAt": "2026-11-03"
+    }
+  ],
+  "b-20261101-brazil": [
+    {
+      "src": "/images/editorial/brazil-20261025.jpg",
+      "width": 960,
+      "height": 567,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:25.10.2026_-_Lula_%C3%A9_reeleito_Presidente_do_Brasil_(55611335982).jpg",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "author": "Ricardo Stuckert / Lula Oficial",
+      "capturedAt": "2026-10-25 23:04:05",
+      "kind": "news",
+      "captionEn": "Lula celebrates re-election in São Paulo, 25 October 2026.",
+      "captionZh": "卢拉在圣保罗庆祝连任，2026年10月25日。",
+      "checkedAt": "2026-11-03"
+    }
+  ],
+  "b-20261101-israel": [
+    {
+      "src": "/images/editorial/israel-20261026.jpg",
+      "width": 960,
+      "height": 721,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Florentin_elections_2026_02.jpg",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "author": "Nizzan Cohen",
+      "capturedAt": "2026-10-26 15:08:41",
+      "kind": "news",
+      "captionEn": "Election campaign banners in Florentin, Tel Aviv, 26 October 2026.",
+      "captionZh": "特拉维夫弗洛伦丁区的选举宣传横幅，2026年10月26日。",
+      "checkedAt": "2026-11-03"
+    }
+  ],
+  "b-20261101-spain": [
+    {
+      "src": "/images/editorial/spain-20261028.jpg",
+      "width": 2000,
+      "height": 1330,
+      "sourceUrl": "https://www.lamoncloa.gob.es/presidente/actividades/Paginas/2026/281026-sanchez-visita-accidente-tren.aspx",
+      "license": "La Moncloa reuse terms",
+      "licenseUrl": "https://www.lamoncloa.gob.es/Paginas/es_AvisoLegal.aspx",
+      "author": "Pool Moncloa / Jorge Villar",
+      "capturedAt": "2026-10-28",
+      "captionEn": "Sánchez meets emergency teams at Urda’s command post, 28 October 2026.",
+      "captionZh": "桑切斯在乌尔达指挥所与应急团队会面，2026年10月28日。",
+      "kind": "news",
+      "checkedAt": "2026-11-03",
+      "attribution": "Origen de los datos: sitio web de lamoncloa.gob.es. Ministerio de la Presidencia. Updated 28 October 2026."
     }
   ]
 }
