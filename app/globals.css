@@ -159,6 +159,25 @@ a { color: inherit; }
 .editor-note { background: var(--acid); padding: 18px 20px; margin: 2px 0 20px; }
 .editor-note summary { cursor: pointer; font-size: 11px; font-weight: 800; letter-spacing: .04em; }
 .editor-note p { margin: 7px 0 0; font-size: 13px; line-height: 1.7; }
+.editor-note h4, .editor-note h2 { margin: 0; font-size: 11px; font-weight: 800; letter-spacing: .04em; }
+.brief-impact { margin: 10px 0 0; font-size: 11px; line-height: 1.65; color: var(--forest); }
+.brief-impact b { display: block; font-size: 10px; }
+.analysis-title-link { display: block; color: inherit; text-decoration: none; }
+.analysis-title-link:hover, .analysis-title-link:focus-visible { text-decoration: underline; text-underline-offset: 4px; }
+.analysis-page { min-height: 100vh; background: #faf8f2; }
+.analysis-header { display: flex; justify-content: space-between; align-items: center; gap: 20px; padding: 22px 5vw; border-bottom: 1px solid var(--line); font-size: 12px; }
+.analysis-article { max-width: 780px; margin: 0 auto; padding: 52px 24px 72px; }
+.analysis-kicker { font-size: 11px; letter-spacing: .12em; color: var(--muted); }
+.analysis-article h1 { font: 600 clamp(32px, 5vw, 52px)/1.15 Georgia, serif; letter-spacing: -.025em; margin: 18px 0 14px; }
+.analysis-title-zh { font-size: 18px; line-height: 1.65; color: var(--forest); }
+.analysis-article .source-line { line-height: 1.8; }
+.analysis-article .bilingual-block h2 { font-size: 17px; margin: 0 0 16px; }
+.analysis-article .bilingual-block h2 span { margin-left: 10px; font-size: 12px; font-weight: 400; color: var(--muted); }
+.analysis-article .en-copy p, .analysis-article .en-copy li { font-size: 18px; line-height: 1.85; }
+.analysis-article .zh-copy p, .analysis-article .zh-copy li { font-size: 14px; line-height: 1.9; }
+.analysis-article .limits h2, .analysis-article .perspective h2 { font-size: 14px; }
+.analysis-scoring { margin-top: 28px; font-size: 12px; color: var(--muted); }
+.analysis-footer { margin-top: 38px; border-top: 1px solid var(--line); padding-top: 22px; font-size: 13px; }
 .analysis-drawer { border-top: 1px solid var(--ink); }
 .analysis-drawer > summary { padding: 18px 0 0; cursor: pointer; list-style: none; display: flex; justify-content: space-between; font-size: 12px; font-weight: 700; }
 .analysis-drawer > summary::-webkit-details-marker { display: none; }

@@ -36,9 +36,9 @@ function EditorialFigure({image, compact = false}: {image: EditorialImage; compa
   return <figure className={`editorial-figure editorial-${image.kind}`}>
     <img src={image.src} width={image.width} height={image.height} alt={image.captionEn} loading="lazy" decoding="async" onError={() => setFailed(true)} />
     <figcaption>
-      {compact ? <details className="photo-details"><summary>Photo info · 图注</summary><span>{image.captionEn}</span><span lang="zh-CN">{image.captionZh}</span>{image.attribution && <span>{image.attribution}</span>}</details> : <><span>{image.kind === "file" && "FILE PHOTO · "}{image.captionEn}</span><span lang="zh-CN">{image.kind === "file" && "资料图 · "}{image.captionZh}</span></>}
-      <span className="image-credit"><a href={image.sourceUrl} target="_blank" rel="noopener noreferrer">{image.author}</a> · <a href={image.licenseUrl} target="_blank" rel="noopener noreferrer">{image.license}</a> · {image.kind === "portrait" ? "Cropped, grayscale / 裁切、灰度" : "Cropped / 裁切"}</span>
-      {!compact && image.attribution && <details className="image-attribution"><summary>Attribution · 署名说明</summary><span>{image.attribution}</span></details>}
+      {compact ? <details className="photo-details"><summary>Photo info</summary><span>{image.captionEn}</span>{image.attribution && <span>{image.attribution}</span>}</details> : <><span>{image.kind === "file" && "FILE PHOTO · "}{image.captionEn}</span></>}
+      <span className="image-credit"><a href={image.sourceUrl} target="_blank" rel="noopener noreferrer">{image.author}</a> · <a href={image.licenseUrl} target="_blank" rel="noopener noreferrer">{image.license}</a> · {image.kind === "portrait" ? "Cropped, grayscale" : "Cropped"}</span>
+      {!compact && image.attribution && <details className="image-attribution"><summary>Attribution</summary><span>{image.attribution}</span></details>}
     </figcaption>
   </figure>;
 }
@@ -64,7 +64,8 @@ function BriefCard({ item, index }: { item: BriefItem; index: number }) {
         <p className={`brief-summary${expanded ? "" : " brief-summary-preview"}`} id={`${item.id}-summary`}>{item.summaryEn}</p>
         <button className="brief-expand" aria-expanded={expanded} aria-controls={`${item.id}-summary`} onClick={() => setExpanded(!expanded)}>{expanded ? "Show less · 收起" : "Read full brief · 完整简报"}</button>
         <details className="brief-translation"><summary>中文摘要</summary><p className="brief-summary-zh" lang="zh-CN">{item.summaryZh}</p></details>
-        <details className="brief-why"><summary>Sources & context · 来源与背景</summary><p lang="zh-CN">{item.why}</p>
+        <p className="brief-impact"><b>Why it matters</b><span lang="zh-CN">{item.why}</span></p>
+        <details className="brief-why"><summary>Sources · 来源</summary>
         <p className="brief-source">{item.sourceType === "外部核查" ? "External check" : "Publication"} · {item.source}</p>
         <SourceLinks links={item.links} />
         <OriginalReadingLinks original={item.original} />
@@ -128,7 +129,8 @@ function CommentaryCard({ item }: { item: CommentaryItem }) {
   );
 }
 
-function TopicCard({ topic }: { topic: Topic }) {
+function TopicCard({ topic, editionId }: { topic: Topic; editionId: string }) {
+  const analysisUrl = `/analysis/${encodeURIComponent(editionId)}/${encodeURIComponent(topic.id)}/`;
   return (
     <article className={`topic-card ${topic.featured ? "is-featured" : ""}`} id={topic.id}>
       <div className="topic-card-head">
@@ -138,8 +140,8 @@ function TopicCard({ topic }: { topic: Topic }) {
             {topic.deepRead && <span className="deep-pill">DEEP READ</span>}
             <span className="read-time">Original read ~{topic.readTime} min</span>
           </div>
-          <h3>{topic.title}</h3>
-          <p className="topic-title-zh" lang="zh-CN">{topic.titleZh}</p>
+          <h3><a className="analysis-title-link" href={analysisUrl}>{topic.title}</a></h3>
+          <p className="topic-title-zh" lang="zh-CN"><a className="analysis-title-link" href={analysisUrl}>{topic.titleZh}</a></p>
           <p className="source-line">{topic.source} · {topic.issue} · {topic.pages}</p>
           {topic.author && <p className="source-line">{topic.author} · PDF p. {topic.pdfPages}</p>}
         </div>
@@ -153,28 +155,7 @@ function TopicCard({ topic }: { topic: Topic }) {
 
       <BilingualBlock label="新闻摘要" enLabel="News Summary" zh={<p>{topic.summaryZh}</p>} en={<p>{topic.summaryEn}</p>} />
 
-      <details className="editor-note"><summary>Why this read matters · 推荐理由</summary><p lang="zh-CN">{topic.why}</p></details>
-
-      <details className="analysis-drawer">
-        <summary><span>Explore the full analysis</span><span className="drawer-meta">Background · Argument · Evidence · Limits</span></summary>
-        <div className="analysis-content">
-          <BilingualBlock label="背景补充" enLabel="Background" zh={<p>{topic.backgroundZh}</p>} en={<p>{topic.backgroundEn}</p>} />
-          <BilingualBlock
-            label="论点梳理"
-            enLabel="Argument Outline"
-            zh={<ol>{topic.argumentZh.map((x) => <li key={x}>{x}</li>)}</ol>}
-            en={<ol>{topic.argumentEn.map((x) => <li key={x}>{x}</li>)}</ol>}
-          />
-          <BilingualBlock label="证据分析" enLabel="Evidence Assessment" zh={<p>{topic.evidenceZh}</p>} en={<p>{topic.evidenceEn}</p>} />
-          {topic.perspective && <div className="perspective"><b>Across publications · 跨刊视角</b><p lang="zh-CN">{topic.perspective}</p></div>}
-          <SourceLinks links={topic.links} />
-          <div className="limits"><b>Reading caveat · 阅读时留意</b><p lang="zh-CN">{topic.limits}</p></div>
-          <div className="score-breakdown">
-            <span>News significance <b>{topic.importance}/60</b></span>
-            <span>Article quality <b>{topic.quality}/40</b></span>
-          </div>
-        </div>
-      </details>
+      <section className="editor-note"><h4>Why it matters · 重要性</h4><p lang="zh-CN">{topic.why}</p></section>
     </article>
   );
 }
@@ -200,6 +181,14 @@ export default function Home() {
     window.addEventListener("popstate", sync);
     return () => window.removeEventListener("popstate", sync);
   }, []);
+  useEffect(() => {
+    const hash = window.location.hash.slice(1);
+    const target = edition.topics.find(t => t.id === hash);
+    if (target) {
+      if (!target.featured) setActive(target.category);
+      requestAnimationFrame(() => document.getElementById(hash)?.scrollIntoView());
+    }
+  }, [editionId, edition]);
   const selectEdition = (id: string) => {
     setEditionId(id); setActive("本周重点"); setSource("全部刊物"); setQuery("");
     setBriefIndex(0); setHasNextBrief(true); briefRail.current?.scrollTo({left: 0});
@@ -309,7 +298,7 @@ export default function Home() {
           <p>{visible.length} topics · English first, Chinese below</p>
         </div>
         <div className="topic-grid">
-          {visible.map((topic) => <TopicCard topic={topic} key={`${editionId}-${topic.id}`} />)}
+          {visible.map((topic) => <TopicCard topic={topic} editionId={editionId} key={`${editionId}-${topic.id}`} />)}
         </div>
         {visible.length === 0 && <div className="empty-state"><b>No matching stories</b><p>Try clearing your search or changing the publication and field filters.</p></div>}
       </section>
