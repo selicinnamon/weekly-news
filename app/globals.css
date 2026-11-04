@@ -84,8 +84,8 @@ a { color: inherit; }
 .brief-card .brief-title-zh { font-size: 11px; }
 .brief-lead { display: flex; align-items: flex-start; gap: 14px; }
 .brief-lead > div { flex: 1; min-width: 0; }
-.brief-lead > .editorial-figure { width: 140px; flex: 0 0 140px; }
-.brief-lead > .editorial-figure img { height: 88px; aspect-ratio: auto; }
+.brief-lead > .editorial-figure { width: 180px; flex: 0 0 180px; }
+.brief-lead > .editorial-figure img { height: 120px; aspect-ratio: auto; }
 .brief-lead > .editorial-figure figcaption { padding: 5px 0 0; font-size: 9px; gap: 3px; overflow-wrap: anywhere; }
 .photo-details summary { cursor: pointer; }
 .photo-details[open] { min-width: 0; }
@@ -108,8 +108,6 @@ a { color: inherit; }
 .brief-card h3 { margin: 9px 0 4px; font: 400 23px/1.2 Georgia, serif; letter-spacing: -.02em; }
 .brief-title-zh { margin: 5px 0 0; color: var(--forest); font-size: 12px; line-height: 1.5; }
 .brief-summary { margin: 10px 0 0; font: 400 16px/1.5 Georgia, serif; }
-.brief-summary-preview { display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3; overflow: hidden; }
-.brief-expand { border: 0; padding: 0; margin-top: 5px; color: var(--forest); background: transparent; font-size: 10px; cursor: pointer; text-decoration: underline; text-underline-offset: 3px; }
 .brief-summary-zh { margin: 14px 0 0; padding: 13px 15px; background: #e9e6dc; color: #51554c; font-size: 12px; line-height: 1.7; }
 .brief-why { margin-top: 8px; font-size: 11px; line-height: 1.65; }
 .brief-why summary { cursor: pointer; font-weight: 700; color: var(--forest); }
@@ -282,8 +280,8 @@ footer p:last-child { text-align: right; }
   .brief-card { flex-basis: 94%; gap: 8px; padding: 0 18px 8px 0; }
   .brief-card h3 { font-size: 21px; }
   .brief-lead { gap: 10px; }
-  .brief-lead > .editorial-figure { width: 94px; flex-basis: 94px; }
-  .brief-lead > .editorial-figure img { height: 66px; }
+  .brief-lead > .editorial-figure { width: 112px; flex-basis: 112px; }
+  .brief-lead > .editorial-figure img { height: 80px; }
   .commentary-card { grid-template-columns: 1fr; padding: 24px 0; }
   .commentary-source { border-right: 0; border-bottom: 1px solid var(--line); padding: 0 0 20px; }
   .commentary-test { grid-template-columns: 1fr; }

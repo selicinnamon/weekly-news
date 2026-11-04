@@ -25,8 +25,8 @@ test("server-renders the bilingual editorial site", async () => {
   assert.match(html, /Emily Dickinson/);
   assert.doesNotMatch(html, /Read less|Understand more|少读一点/);
   assert.match(html, /News Summary/);
-  assert.match(html, /Read full brief/);
-  assert.match(html, /brief-summary-preview/);
+  assert.doesNotMatch(html, /Read full brief|brief-summary-preview|brief-expand/);
+  assert.match(html, /class="brief-summary"/);
   assert.match(html, /中文摘要/);
   assert.doesNotMatch(html, /FILE PHOTO|Notre-Dame’s west|Renfe AVE train near El Prat/);
   assert.match(html, /Read original/);

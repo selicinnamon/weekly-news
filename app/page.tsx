@@ -44,7 +44,6 @@ function EditorialFigure({image, compact = false}: {image: EditorialImage; compa
 }
 
 function BriefCard({ item, index }: { item: BriefItem; index: number }) {
-  const [expanded, setExpanded] = useState(false);
   return (
     <article className="brief-card" id={item.id}>
       <div className="brief-copy">
@@ -61,8 +60,7 @@ function BriefCard({ item, index }: { item: BriefItem; index: number }) {
         </div>
         {imageRegistry[item.id]?.filter(image => image.kind === "news").map(image => <EditorialFigure key={image.src} image={image} compact />)}
         </div>
-        <p className={`brief-summary${expanded ? "" : " brief-summary-preview"}`} id={`${item.id}-summary`}>{item.summaryEn}</p>
-        <button className="brief-expand" aria-expanded={expanded} aria-controls={`${item.id}-summary`} onClick={() => setExpanded(!expanded)}>{expanded ? "Show less · 收起" : "Read full brief · 完整简报"}</button>
+        <p className="brief-summary" id={`${item.id}-summary`}>{item.summaryEn}</p>
         <details className="brief-translation"><summary>中文摘要</summary><p className="brief-summary-zh" lang="zh-CN">{item.summaryZh}</p></details>
         <p className="brief-impact"><b>Why it matters</b><span lang="zh-CN">{item.why}</span></p>
         <details className="brief-why"><summary>Sources · 来源</summary>
