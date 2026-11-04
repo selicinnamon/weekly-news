@@ -37,15 +37,20 @@ Readers can switch editions and filter Highlights by field, publication or searc
 
 ## Editorial approach · 编辑原则
 
-- **Events before trends in the Brief.** Major developments should not disappear simply because a longer analysis is unavailable. Background features are labelled, not presented as breaking news.
+- **Events before trends in the Brief.**
+- Major developments should not disappear simply because a longer analysis is unavailable. Background features are labelled, not presented as breaking news.
   简报首先回答“这周发生了什么”；长篇背景不冒充周内新事件。
-- **Importance and quality are assessed separately.** The baseline score allocates 60 points to news importance and 40 to article quality. Interest preferences guide selection among comparable candidates. Scores are editorial judgements, not objective truth.
+- **Importance and quality are assessed separately.**
+- The baseline score allocates 60 points to news importance and 40 to article quality. Interest preferences guide selection among comparable candidates. Scores are editorial judgements, not objective truth.
   基础评分分为新闻重要性 60 分与文章质量 40 分；兴趣偏好用于同档候选的取舍，分数不是客观真理。
-- **Breadth without filler.** Priority runs from world affairs to economy, society, culture and technology. All five fields are considered; gaps in suitable source material should be acknowledged rather than filled with weak stories.
+- **Breadth without filler.**
+- Priority runs from world affairs to economy, society, culture and technology. All five fields are considered; gaps in suitable source material should be acknowledged rather than filled with weak stories.
   国际、经济、社会、文化、科技依次侧重；兼顾覆盖，但不以低质量内容补位。
-- **Separate facts, claims and interpretation.** Preserve attribution, dates and uncertainty. Group coverage of the same event without erasing disagreement.
+- **Separate facts, claims and interpretation.**
+- Preserve attribution, dates and uncertainty. Group coverage of the same event without erasing disagreement.
   区分事实、当事方主张与编辑分析，保留归因、日期、不确定性及跨刊分歧。
-- **Bilingual guides, not full translations.** Summaries, background, argument outlines, evidence assessments and topic tags are provided in both languages. English is written naturally, with factual consistency between languages.
+- **Bilingual guides, not full translations.**
+- Summaries, background, argument outlines, evidence assessments and topic tags are provided in both languages. English is written naturally, with factual consistency between languages.
   摘要、背景、论点、证据分析与标签提供原创双语导读，不提供整篇翻译；两种语言须保持事实一致。
 
 Source material varies by edition and includes publications such as *The Economist*, *The Guardian*, *Financial Times*, *The Wall Street Journal*, *The New York Times*, *Bloomberg Businessweek*, *The Atlantic* and *The New Yorker*. Longer-period publications may be used across several weeks. Inclusion does not imply affiliation or endorsement.
