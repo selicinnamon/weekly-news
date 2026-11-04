@@ -9,9 +9,9 @@ import {editions} from "../data/editions";
 const categories: Category[] = ["本周重点", "国际", "经济", "社会", "文化", "科技"];
 const categoryEn: Record<Category, string> = {"本周重点": "Highlights", "国际": "World", "经济": "Economy", "社会": "Society", "文化": "Culture", "科技": "Technology"};
 
-function ScoreRing({ score }: { score: number }) {
+function EditorialScore({ score }: { score: number }) {
   return (
-    <div className="score-ring" style={{ "--score": `${score * 3.6}deg` } as React.CSSProperties} aria-label={`Overall score ${score} out of 100`}>
+    <div className="editorial-score" aria-label={`Overall score ${score} out of 100`}>
       <span>{score}</span>
       <small>score</small>
     </div>
@@ -145,7 +145,7 @@ function TopicCard({ topic, editionId }: { topic: Topic; editionId: string }) {
           <p className="source-line">{topic.source} · {topic.issue} · {topic.pages}</p>
           {topic.author && <p className="source-line">{topic.author} · PDF p. {topic.pdfPages}</p>}
         </div>
-        <ScoreRing score={topic.score} />
+        <EditorialScore score={topic.score} />
       </div>
 
       <OriginalReadingLinks original={topic.original} />
@@ -236,6 +236,7 @@ export default function Home() {
       </header>
 
       <section className="hero" id="top">
+        <div className="hero-main">
         <div className="edition-picker"><label htmlFor="edition">Edition / 阅读期数</label><select id="edition" value={editionId} onChange={event => selectEdition(event.target.value)}>{editions.map(e => <option key={e.id} value={e.id}>{e.label}</option>)}</select></div>
         <div className="hero-kicker">{edition.period}</div>
         <h1>The Truth must<br /><em>dazzle gradually.</em></h1>
@@ -247,6 +248,7 @@ export default function Home() {
           <div><strong>{briefs.length}</strong><span>NEWS BRIEFS<br />新闻简报</span></div>
           <div><strong>{String(topics.length).padStart(2,"0")}</strong><span>CORE TOPICS<br />核心议题</span></div>
           <div><strong>{String(topics.filter(t => t.deepRead).length).padStart(2,"0")}</strong><span>DEEP READS<br />精读文选</span></div>
+        </div>
         </div>
         <div className="hero-aside">
           <span>THIS WEEK&apos;S THREAD</span>
