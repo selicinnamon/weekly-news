@@ -24,3 +24,21 @@ test('briefs use only matched recent news photos; missing photos stay absent', a
   assert.equal(Object.entries(images).filter(([key]) => key.startsWith('b-')).length, 4);
   assert.equal(images['b-20261101-spain'][0].attribution.includes('Ministerio de la Presidencia'), true);
 });
+
+test('October 18 adds only verified named-author portraits without news-image substitutes', async () => {
+  const images = JSON.parse(await readFile(new URL('../data/editorial-images.json', import.meta.url), 'utf8'));
+  const issue = JSON.parse(await readFile(new URL('../data/editions/2026-10-18.json', import.meta.url), 'utf8'));
+  for (const brief of issue.briefs) assert.equal(images[brief.id], undefined);
+  assert.equal(images['comment-20261018-middlepowers'], undefined);
+  const coauthors = images['comment-20261018-ai-rules'];
+  assert.equal(coauthors.length, 2);
+  assert.match(coauthors[0].captionEn, /Lawrence Lessig/);
+  assert.match(coauthors[1].captionEn, /Yoshua Bengio/);
+  assert.match(images['comment-20261018-remnick'][0].captionEn, /David Remnick/);
+  for (const id of ['comment-20261018-ai-rules', 'comment-20261018-remnick']) {
+    for (const image of images[id]) {
+      assert.equal(image.kind, 'portrait');
+      assert.equal(image.checkedAt, '2026-11-04');
+    }
+  }
+});

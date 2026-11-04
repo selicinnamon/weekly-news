@@ -1,4 +1,50 @@
 {
+  "comment-20261018-ai-rules": [
+    {
+      "src": "/images/editorial/lessig-portrait.jpg",
+      "width": 823,
+      "height": 1362,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lawrence_Lessig_Headshot.jpg",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "author": "Lessig 2016",
+      "capturedAt": "2015-08",
+      "captionEn": "Lawrence Lessig, official campaign headshot, August 2015.",
+      "captionZh": "劳伦斯·莱西格，2015年8月官方竞选肖像。",
+      "kind": "portrait",
+      "checkedAt": "2026-11-04"
+    },
+    {
+      "src": "/images/editorial/bengio-portrait.jpg",
+      "width": 2430,
+      "height": 2930,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:ICLR_2025_-_Yoshua_Bengio_02.jpg",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "author": "Xuthoria",
+      "capturedAt": "2025-04-28 11:44:59",
+      "captionEn": "Yoshua Bengio at ICLR in Singapore, 28 April 2025.",
+      "captionZh": "约书亚·本吉奥，2025年4月28日摄于新加坡ICLR会议。",
+      "kind": "portrait",
+      "checkedAt": "2026-11-04"
+    }
+  ],
+  "comment-20261018-remnick": [
+    {
+      "src": "/images/editorial/remnick-portrait.jpg",
+      "width": 1728,
+      "height": 2304,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:David_Remnick_in_2008.jpg",
+      "license": "CC BY-SA 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5/",
+      "author": "Martin Schneider / Priceyeah",
+      "capturedAt": "2008-05-09",
+      "captionEn": "David Remnick at The New Yorker Conference, 9 May 2008.",
+      "captionZh": "大卫·雷姆尼克，2008年5月9日摄于《纽约客》会议。",
+      "kind": "portrait",
+      "checkedAt": "2026-11-04"
+    }
+  ],
   "c-20261101-aiguardrails": [
     {
       "src": "/images/editorial/nir.png",
