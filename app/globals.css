@@ -94,6 +94,8 @@ a { color: inherit; }
 .brief-translation summary { cursor: pointer; color: var(--forest); font-weight: 600; }
 .weekly-brief { padding-top: 32px; padding-bottom: 28px; }
 .editorial-figure img { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; }
+/* Preserve both faces in the compact meeting photograph. */
+.editorial-news img[src$="whitehouse-trump-xi-20260924.jpg"] { object-position: center top; }
 .editorial-figure figcaption { display: grid; gap: 3px; padding: 9px 12px; font-size: 10px; line-height: 1.5; color: var(--muted); }
 .image-credit { font-size: 9px; }
 .image-credit a { color: inherit; text-underline-offset: 2px; }

@@ -2,6 +2,20 @@ import assert from 'node:assert/strict';
 import {readFile, stat} from 'node:fs/promises';
 import test from 'node:test';
 
+test('October 4 images match the dated events and named author', async () => {
+  const images = JSON.parse(await readFile(new URL('../data/editorial-images.json', import.meta.url), 'utf8'));
+  for (const [id, date] of [['brief-20261004-brazil', '2026-10-04'], ['brief-20261004-china-us', '2026-09-24']]) {
+    assert.equal(images[id].length, 1);
+    assert.equal(images[id][0].kind, 'news');
+    assert.ok(images[id][0].capturedAt.startsWith(date));
+  }
+  assert.equal(images['comment-20261004-press'][0].kind, 'portrait');
+  assert.match(images['comment-20261004-press'][0].captionEn, /Jelani Cobb/);
+  assert.equal(images['comment-20261004-tax'], undefined);
+  assert.equal(images['comment-20261004-mayors'], undefined);
+  assert.equal(Object.keys(images).filter(id => id.startsWith('brief-20261004-')).length, 2);
+});
+
 test('briefs use only matched recent news photos; missing photos stay absent', async () => {
   const images = JSON.parse(await readFile(new URL('../data/editorial-images.json', import.meta.url), 'utf8'));
   for (const date of ['2026-10-25', '2026-11-01']) {
