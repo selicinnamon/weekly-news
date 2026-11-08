@@ -2,6 +2,20 @@ import assert from 'node:assert/strict';
 import {readFile, stat} from 'node:fs/promises';
 import test from 'node:test';
 
+test('September 27 uses the actual visit photo and leaves unverified placements empty', async () => {
+  const images = JSON.parse(await readFile(new URL('../data/editorial-images.json', import.meta.url), 'utf8'));
+  const issue = JSON.parse(await readFile(new URL('../data/editions/2026-09-27.json', import.meta.url), 'utf8'));
+  const chosen = images['brief-20260927-china'];
+  assert.equal(chosen.length, 1);
+  assert.equal(chosen[0].kind, 'news');
+  assert.match(chosen[0].capturedAt, /^2026-09-24/);
+  assert.equal(chosen[0].license, 'Public domain');
+  assert.equal(chosen[0].src, images['brief-20261004-china-us'][0].src);
+  for (const item of [...issue.briefs, ...issue.commentary]) {
+    if (item.id !== 'brief-20260927-china') assert.equal(images[item.id], undefined);
+  }
+});
+
 test('October 4 images match the dated events and named author', async () => {
   const images = JSON.parse(await readFile(new URL('../data/editorial-images.json', import.meta.url), 'utf8'));
   for (const [id, date] of [['brief-20261004-brazil', '2026-10-04'], ['brief-20261004-china-us', '2026-09-24']]) {
