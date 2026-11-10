@@ -5,7 +5,7 @@ import test from 'node:test';
 
 async function editions() {
   const result = [];
-  for (const file of ['2026-11-01.json', '2026-10-25.json', '2026-10-18.json', '2026-10-04.ts', '2026-09-27.json', 'pilot.ts']) {
+  for (const file of ['2026-11-08.json', '2026-11-01.json', '2026-10-25.json', '2026-10-18.json', '2026-10-04.ts', '2026-09-27.json', 'pilot.ts']) {
     const raw = await readFile(new URL(`../data/editions/${file}`, import.meta.url), 'utf8');
     if (file.endsWith('.json')) result.push(JSON.parse(raw));
     else {
@@ -24,10 +24,10 @@ test('every brief and highlight explains real-world significance within 60 chara
     assert.doesNotMatch(item.why, /本期|首选|名额|入选|精读|文化入口|符合.*兴趣/, item.id);
     count++;
   }
-  assert.equal(count, 125);
+  assert.equal(count, 146);
 });
 
-test('all 48 analysis pages are exported with full content and edition-specific return links', async () => {
+test('all 56 analysis pages are exported with full content and edition-specific return links', async () => {
   let count = 0;
   for (const issue of await editions()) for (const topic of issue.topics) {
     const path = `analysis/${issue.id}/${topic.id}/index.html`;
@@ -38,15 +38,16 @@ test('all 48 analysis pages are exported with full content and edition-specific 
     assert.ok((await stat(new URL(`../dist/client/${path}`, import.meta.url))).size > 1000);
     count++;
   }
-  assert.equal(count, 48);
+  assert.equal(count, 56);
 });
 
 test('home links titles to standalone analysis and all rendered image captions are English-only', async () => {
   const html = await readFile(new URL('../dist/client/index.html', import.meta.url), 'utf8');
-  assert.match(html, /href="\/analysis\/2026-11-01\/t-20261101-israel\//);
+  assert.match(html, /href="\/analysis\/2026-11-08\/t-20261108-congress\//);
   assert.doesNotMatch(html, /Explore the full analysis|analysis-drawer|Why this read matters/);
   const captions = [...html.matchAll(/<figcaption\b[^>]*>([\s\S]*?)<\/figcaption>/g)];
-  assert.ok(captions.length >= 5);
+  // This edition has no rights-cleared images; never fill it with older stock.
+  assert.equal(captions.length, 0);
   for (const [,caption] of captions) assert.doesNotMatch(caption, /\p{Script=Han}/u);
 });
 

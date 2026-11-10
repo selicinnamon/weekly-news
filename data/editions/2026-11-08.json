@@ -1,0 +1,1127 @@
+{
+  "id": "2026-11-08",
+  "label": "2026.11.02–11.08",
+  "period": "WEEKLY EDITION · 2026.11.02 — 11.08",
+  "status": "周报 · 11.10 发布",
+  "ledeEn": "A political landslide, a market reversal and a week of disruption: what changed—and what has not.",
+  "lede": "政治版图骤变，市场转向，日常系统遭受干扰：这一周，什么改变了，什么尚未改变。",
+  "observationEn": "An election changes who can demand answers. It does not immediately change a war, a borrowing cost or the evidence behind a medical diagnosis.",
+  "observation": "选举改变谁有权要求答案，却不会立即改变战争、借贷成本，或一项医学诊断背后的证据。",
+  "scopeEn": "Selected from the supplied November 2–8 publications, not complete world coverage. Election counts and casualty figures retain their reporting cutoffs. The New Yorker’s November 9 issue includes an investigation published on November 2 and a separately labelled pre-election comment. Later developments are not backfilled.",
+  "scope": "选自所提供的11月2–8日刊物，并非全球新闻全集。计票与伤亡数字保留报道时点。《纽约客》11月9日期号采用11月2日上线的调查，另一篇选前评论明确标为背景，不倒填周后发展。",
+  "readingNoteEn": "Read the events first, then explore three selected reads: Congress’s new powers, AI’s cross-border supply chain and the disputed boundary between Alzheimer’s risk and disease.",
+  "readingNote": "先看事件，再精读国会权力边界、AI跨国供应链，以及阿尔茨海默病风险与疾病之间的争议。",
+  "briefs": [
+    {
+      "id": "b-20261108-midterms",
+      "category": "国际",
+      "date": "11.03–11.07",
+      "titleEn": "Democrats Win Both Chambers in a Midterm Landslide",
+      "titleZh": "民主党在期中选举中大胜，夺回国会两院",
+      "summaryEn": "Democrats won control of the House and Senate in the November 3 elections, including Senate breakthroughs in Texas and Kansas. The Economist’s November 5 cutoff put them on course for about 260 House seats and at least 54 Senate seats, with races still uncalled. Prices, the Iran war and distrust of government featured prominently in accounts of the defeat. The new majorities take office in January; they had not already taken over Congress this week.",
+      "summaryZh": "民主党在11月3日期中选举中赢得众参两院，包括得克萨斯与堪萨斯参议员选举的突破。《经济学人》截至11月5日预计其众院约260席、参院至少54席，部分选区尚未揭晓。物价、伊朗战争及对政府的不信任是败选报道中的重要因素。新多数将在1月就职，并非本周已经接管国会。",
+      "why": "国会监督和预算权将重新约束白宫，但胜选不等于能立即撤销关税或终结战争。",
+      "source": "FT · NOV 5 · P. 1; THE GUARDIAN · NOV 5 · PP. 1–4; THE ECONOMIST · NOV 7 · PP. 23–25",
+      "original": {
+        "checkedAt": "2026-11-10",
+        "links": []
+      }
+    },
+    {
+      "id": "b-20261108-miller",
+      "category": "国际",
+      "date": "11.06",
+      "titleEn": "Trump Names Stephen Miller as His Next Chief of Staff",
+      "titleZh": "特朗普宣布米勒将任白宫幕僚长",
+      "summaryEn": "Trump announced that Stephen Miller would replace Susie Wiles as White House chief of staff after the Republican election defeat. Miller, a central architect of the immigration crackdown, was due to start on November 9, outside this edition’s window. His appointment points toward a continued hard-line approach, but is not proof that a particular new policy has already been enacted.",
+      "summaryZh": "共和党败选后，特朗普宣布由斯蒂芬·米勒接替苏西·怀尔斯任白宫幕僚长。米勒是强硬移民行动的关键设计者，预计11月9日开始履职，超出本期窗口。任命显示强硬路线可能延续，但不证明某项新政策已经实施。",
+      "why": "选票施压后仍提拔强硬派，意味着行政权与新国会的冲突可能延续，移民政策尤其值得关注。",
+      "source": "NYT · NOV 7 · A1, A19 / PDF 1, 19",
+      "original": {
+        "checkedAt": "2026-11-10",
+        "links": [
+          {
+            "publication": "The Guardian",
+            "url": "https://www.theguardian.com/us-news/2026/nov/06/stephen-miller-chief-of-staff-trump",
+            "access": "free",
+            "verification": "publisher-page",
+            "note": "Corresponding web reporting, not the NYT print article."
+          }
+        ]
+      }
+    },
+    {
+      "id": "b-20261108-iran",
+      "category": "国际",
+      "date": "11.02–11.03",
+      "titleEn": "US Officials Describe Further Strikes on Qeshm Island",
+      "titleZh": "美方官员披露对格什姆岛继续实施打击",
+      "summaryEn": "US forces attacked Iran’s Qeshm Island on November 2, the Journal reported, citing US officials. They described limited defensive operations, including a response to a missile fired at a US fighter and an interception involving a threat to commercial shipping. Trump publicly played down continuing combat. This is a gap between public rhetoric and the officials’ account—not confirmation that a new large-scale offensive had begun.",
+      "summaryZh": "《华尔街日报》引述美方官员称，美军11月2日袭击伊朗格什姆岛。官员将其描述为有限防御行动，包括回应向美军战机发射的导弹，以及涉及商船威胁的拦截。特朗普公开淡化持续交战。这呈现公开表述与官员说法的落差，并不确认新一轮大规模攻势已开始。",
+      "why": "有限交火也可能误判升级；霍尔木兹海峡安全会直接影响能源供应、运费和全球物价。",
+      "source": "WSJ · NOV 3 · A1, A7 / PDF 1, 7; THE ECONOMIST · NOV 7 · PP. 19–21",
+      "original": {
+        "checkedAt": "2026-11-10",
+        "links": []
+      }
+    },
+    {
+      "id": "b-20261108-ukraine",
+      "category": "国际",
+      "date": "11.02–11.05",
+      "titleEn": "Ukraine Reports 43 Dead After a Strike Near Zaporizhzhia",
+      "titleZh": "乌方称扎波罗热地区袭击已致43人死亡",
+      "summaryEn": "Zelensky said 43 people were confirmed dead after Russian guided bombs hit a former school and a nearby shelter in Komyshuvakha on November 2, where residents were waiting for aid. The Journal’s November 6 report said rescuers were still searching for more than 30 people believed trapped. Reconstruction and security-guarantee talks continued in Brussels while fighting went on; talks were not a ceasefire.",
+      "summaryZh": "泽连斯基称，俄军11月2日以制导航弹袭击科梅舒瓦哈一所原学校和附近避难所，已确认43人死亡，当时居民正在等候援助。《华尔街日报》11月6日报道，救援人员仍在寻找被认为困在废墟中的30余人。布鲁塞尔继续讨论重建和安全保障，但会谈不等于停火。",
+      "why": "援助点遭袭使平民生存与救援更困难，也说明重建承诺必须与现实的安全保障一起评估。",
+      "source": "WSJ · NOV 6 · A8 / PDF 8 · ASSOCIATED PRESS",
+      "original": {
+        "checkedAt": "2026-11-10",
+        "links": []
+      }
+    },
+    {
+      "id": "b-20261108-paraguay",
+      "category": "国际",
+      "date": "11.03–11.05",
+      "titleEn": "Paraguay’s President Offers to Resign After a Bank Collapse",
+      "titleZh": "银行倒闭引发政治危机，巴拉圭总统提出辞职",
+      "summaryEn": "Santiago Peña offered to resign on November 5 after Ueno Bank, with which he had financial ties, collapsed. The Journal reported about $850m in frozen deposits and three million clients affected. Lawmakers were weighing resignation against removal, with different consequences for immunity. A deposit guarantee could protect many retail savers; it did not mean accounts had reopened or every loss was covered.",
+      "summaryZh": "与Ueno银行有过财务关联的总统圣地亚哥·佩尼亚，在银行倒闭后于11月5日提出辞职。《华尔街日报》报道约8.5亿美元存款被冻结、300万客户受影响。议员权衡接受辞职或罢免，两者涉及不同豁免后果。存款保障可能保护许多小额储户，不等于账户已恢复或全部损失获赔。",
+      "why": "政治关联银行倒闭会同时冲击储户、企业现金流与政府公信力；关键在监管问责和赔付落实。",
+      "source": "WSJ · NOV 6 · A7 / PDF 7",
+      "original": {
+        "checkedAt": "2026-11-10",
+        "links": []
+      }
+    },
+    {
+      "id": "b-20261108-hoaxes",
+      "category": "社会",
+      "date": "11.03–11.06",
+      "titleEn": "Bomb Hoaxes Disrupt European Flights and Newsrooms",
+      "titleZh": "连续炸弹虚警扰乱欧洲航班和新闻机构",
+      "summaryEn": "Bomb threats forced diversions, aircraft searches and military escorts across Europe. Friday’s alerts affected at least another 18 flights after earlier waves on Tuesday and Thursday; searches found no explosives. Irish newsrooms also evacuated staff. Authorities had not established a common organiser or state sponsor. Similar timing alone does not prove a connection with this week’s cyberattacks.",
+      "summaryZh": "欧洲多地炸弹威胁导致航班备降、搜查和军机护航。周二、周四两轮后，周五又有至少18班受影响，搜查未发现爆炸物。爱尔兰新闻机构也疏散人员。有关部门尚未确定共同组织者或国家幕后支持；时间相近不能证明与本周网络攻击存在关联。",
+      "why": "低成本虚警能迫使交通和媒体付出高昂代价；识别真正危险与避免过度反应同样重要。",
+      "source": "FT · NOV 6 · PP. 1, 4; WSJ · NOV 6 · A6 / PDF 6; THE GUARDIAN · NOV 7 · PP. 1–2",
+      "original": {
+        "checkedAt": "2026-11-10",
+        "links": [
+          {
+            "publication": "The Guardian",
+            "url": "https://www.theguardian.com/world/2026/nov/06/further-bomb-threats-disrupt-flights-across-europe",
+            "access": "free",
+            "verification": "publisher-page"
+          }
+        ]
+      }
+    },
+    {
+      "id": "b-20261108-markets",
+      "category": "经济",
+      "date": "11.04–11.06",
+      "titleEn": "AI Stocks Reverse the Post-Election Rally",
+      "titleZh": "AI股票急跌，选后市场反弹迅速逆转",
+      "summaryEn": "US shares rallied on November 4, then sold off sharply the next day as investors reassessed AI spending and possible data-centre restrictions. The Journal recorded Thursday falls of 5.5% in the Nasdaq Composite and 4.4% in the S&P 500. The FT’s earlier print report used intraday figures, not closing prices. Friday brought a partial recovery, not a resolution of financing and valuation concerns.",
+      "summaryZh": "美股11月4日上涨，次日却在投资者重估AI投入和数据中心限制风险后急跌。《华尔街日报》记录周四纳斯达克综合指数跌5.5%、标普500跌4.4%。FT较早截稿版使用盘中数字，不是收盘价。周五出现部分反弹，但融资与估值疑虑并未因此消失。",
+      "why": "AI投资已牵动股市、融资和实体建设；市场重估的不只是技术前景，也是巨额投入能否兑现收益。",
+      "source": "FT · NOV 6 · P. 1; FT WEEKEND · NOV 7–8 · P. 1; WSJ · NOV 6 · A1–A2 / PDF 1–2",
+      "original": {
+        "checkedAt": "2026-11-10",
+        "links": [
+          {
+            "publication": "The Guardian",
+            "url": "https://www.theguardian.com/business/2026/nov/06/global-stocks-plunge-amid-ai-slowdown-fears-after-democrats-midterm-triumph",
+            "access": "free",
+            "verification": "publisher-page",
+            "note": "Corresponding market coverage; not the FT print article."
+          }
+        ]
+      }
+    },
+    {
+      "id": "b-20261108-boe",
+      "category": "经济",
+      "date": "11.05",
+      "titleEn": "Bank of England Raises Its Policy Rate to 4%",
+      "titleZh": "英国央行将政策利率上调至4%",
+      "summaryEn": "The Bank of England raised its policy rate from 3.75% to 4%, responding to persistent energy-driven inflation and the risk of stronger wage demands. The Journal reported a forecast putting inflation at 4.9% in the second quarter of 2027, conditional on its assumptions. Governor Andrew Bailey cautioned against treating the decision as the start of an inevitable long sequence of increases. Future rates remained uncertain.",
+      "summaryZh": "英国央行将政策利率由3.75%上调至4%，应对持续能源通胀及工资要求上升风险。按WSJ报道，在所用假设下，预测2027年第二季度通胀达4.9%。行长贝利提醒，不应将本次决定视为漫长加息周期必然开始。未来利率路径仍不确定。",
+      "why": "能源冲击正转化为借贷压力；加息抑制通胀的同时，也会加重房贷续约与企业融资负担。",
+      "source": "WSJ · NOV 6 · A6 / PDF 6; FT · NOV 6 · P. 2",
+      "original": {
+        "checkedAt": "2026-11-10",
+        "links": [
+          {
+            "publication": "The Guardian",
+            "url": "https://www.theguardian.com/business/2026/nov/05/bank-of-england-raises-interest-rates-first-increase-for-more-than-three-years",
+            "access": "free",
+            "verification": "publisher-page"
+          }
+        ]
+      }
+    },
+    {
+      "id": "b-20261108-jobs",
+      "category": "经济",
+      "date": "11.06",
+      "titleEn": "US Adds 165,000 Jobs; Unemployment Falls to 4.1%",
+      "titleZh": "美国新增16.5万个岗位，失业率降至4.1%",
+      "summaryEn": "US employers added a seasonally adjusted 165,000 jobs in October, the Bureau of Labor Statistics reported on November 6, according to the Times. Unemployment edged down to 4.1%, while August and September gains were revised up by a combined 84,000. The report points to a resilient labour market. It does not establish that AI has no employment effects, or that household purchasing power has recovered.",
+      "summaryZh": "《纽约时报》报道，美国劳工统计局11月6日公布，10月经季调新增16.5万个岗位，失业率小幅降至4.1%；8、9月新增就业合计上修8.4万。这说明劳动力市场仍具韧性，但不能证明AI没有就业影响，也不能证明家庭购买力已恢复。",
+      "why": "总量就业稳健可以与求职困难、物价压力并存；判断经济体感，需要把岗位、工资和生活成本一起看。",
+      "source": "NYT · NOV 7 · A1, A20 / PDF 1, 20",
+      "original": {
+        "checkedAt": "2026-11-10",
+        "links": []
+      }
+    },
+    {
+      "id": "b-20261108-cyber",
+      "category": "科技",
+      "date": "11.02–11.05",
+      "titleEn": "Cyberattacks Spoil Food Across European Supermarkets",
+      "titleZh": "欧洲多国超市冷柜遭网络攻击，食品报废",
+      "summaryEn": "Attackers manipulated connected refrigeration systems at supermarkets in at least seven European countries, forcing shops to discard food. FT reporting described a new cross-border wave, distinct from earlier French incidents. The attackers’ identities and motives remained unconfirmed. AI can accelerate exploitation of old software, but that general capability is not forensic proof of its role in every attack.",
+      "summaryZh": "攻击者操控联网制冷系统，至少七个欧洲国家的超市被迫报废食品。FT将其报道为区别于此前法国事件的新一轮跨境攻击。攻击者身份和动机尚未确认。AI能加快利用旧软件漏洞，但这种一般能力不等于对每起攻击中AI作用的取证结论。",
+      "why": "联网设备故障会迅速变成食品损失和公共服务风险；数字安全已经是基础设施安全，而非纯粹IT问题。",
+      "source": "FT · NOV 3 · PP. 1, 9; THE GUARDIAN · NOV 3 · PP. 1–2; THE ECONOMIST · NOV 7 · PP. 57–58",
+      "original": {
+        "checkedAt": "2026-11-10",
+        "links": []
+      }
+    },
+    {
+      "id": "b-20261108-ebola",
+      "category": "社会",
+      "date": "11.04–11.07 REPORTING",
+      "titleEn": "Ebola’s Spread Exposes Gaps in Contact Tracing",
+      "titleZh": "埃博拉继续传播，接触者追踪漏洞引发担忧",
+      "summaryEn": "The Economist’s November 4 data cutoff recorded more than 10,500 confirmed cases and 5,130 deaths in the outbreak centred on eastern Congo. Kenya had reported nine cases; Nigeria’s first case was reported in October, not this week. The new report highlights unexplained transmission and weak contact tracing. A warning that this could become the worst outbreak is not an outcome already reached.",
+      "summaryZh": "《经济学人》截至11月4日的数据记录，以刚果（金）东部为中心的疫情累计逾1.05万例确诊、5130人死亡。肯尼亚已报告9例；尼日利亚首例在10月报告，并非本周首次出现。新报道重点是未解释传播与接触者追踪不足。“可能成为最严重疫情”是警告，不是已发生结果。",
+      "why": "冲突和不信任会让传染链逃过监测，并挤压常规医疗；跨境防疫不能只依赖机场筛查。",
+      "source": "THE ECONOMIST · NOV 7 · PP. 41–42 / PDF 41–42",
+      "original": {
+        "checkedAt": "2026-11-10",
+        "links": []
+      }
+    },
+    {
+      "id": "b-20261108-brand",
+      "category": "社会",
+      "date": "11.05–11.07",
+      "titleEn": "Russell Brand Convicted of Rape and Sexual Assault",
+      "titleZh": "罗素·布兰德被裁定强奸和性侵罪成立",
+      "summaryEn": "A London jury convicted Russell Brand of one rape count and three sexual-assault counts after a four-week trial. He was acquitted on three other counts and remanded before sentencing scheduled for November 9, outside this edition’s window. Police were investigating further allegations; those were not additional convictions. The case followed the 2023 investigation by the Times, Sunday Times and Channel 4.",
+      "summaryZh": "伦敦陪审团在四周审讯后裁定布兰德一项强奸罪、三项性侵罪成立，另三项指控获判无罪。他被还押，定于11月9日量刑，超出本期窗口。警方调查其他指控，但调查不等于新增定罪。案件始于《泰晤士报》《星期日泰晤士报》与Channel 4于2023年的调查。",
+      "why": "案件检验名望能否凌驾于问责之上，也提醒媒体机构审视投诉机制与保护举报人的责任。",
+      "source": "THE GUARDIAN · NOV 6 · PP. 1–4; WSJ · NOV 6 · A6 / PDF 6",
+      "original": {
+        "checkedAt": "2026-11-10",
+        "links": [
+          {
+            "publication": "The Guardian",
+            "url": "https://www.theguardian.com/culture/2026/nov/05/russell-brand-found-guilty-rape-sexual-assault",
+            "access": "free",
+            "verification": "publisher-page"
+          }
+        ]
+      }
+    },
+    {
+      "id": "b-20261108-rose",
+      "category": "文化",
+      "date": "11.06",
+      "titleEn": "Martine Rose Named Balenciaga’s Creative Director",
+      "titleZh": "玛丁·罗斯获任巴黎世家创意总监",
+      "summaryEn": "Balenciaga appointed British designer Martine Rose to succeed Pierpaolo Piccioli, making her the first woman to lead the house. Known for menswear rooted in British subcultures, Rose previously worked on Balenciaga’s menswear. The appointment is part of Kering’s wider creative overhaul: a significant change in who holds creative authority, not evidence that commercial recovery is already secured.",
+      "summaryZh": "巴黎世家任命英国设计师玛丁·罗斯接替皮尔保罗·皮乔利，成为首位领导该品牌的女性。罗斯以扎根英国亚文化的男装设计知名，也曾参与巴黎世家男装。任命属于开云更广泛的创意调整，代表创作权力的重要变化，但不意味着商业复苏已经实现。",
+      "why": "谁能掌握奢侈品牌创作权，决定哪些文化经验进入主流；人事突破仍需作品与经营结果检验。",
+      "source": "THE GUARDIAN · NOV 7 · P. 3 / PDF 3",
+      "original": {
+        "checkedAt": "2026-11-10",
+        "links": [
+          {
+            "publication": "The Guardian",
+            "url": "https://www.theguardian.com/fashion/2026/nov/06/martine-rose-appointed-creative-director-balenciaga-fashion-house",
+            "access": "free",
+            "verification": "publisher-page"
+          }
+        ]
+      }
+    }
+  ],
+  "topics": [
+    {
+      "id": "t-20261108-congress",
+      "articleId": "20261107-economist-23-democrats",
+      "category": "国际",
+      "tags": [
+        [
+          "美国政治",
+          "US politics"
+        ],
+        [
+          "权力制衡",
+          "Checks and balances"
+        ],
+        [
+          "生活成本",
+          "Cost of living"
+        ]
+      ],
+      "title": "Democrats’ next challenge",
+      "titleZh": "民主党的下一道考题",
+      "author": "The Economist",
+      "genre": "Reported political analysis",
+      "source": "The Economist",
+      "publications": [
+        "The Economist",
+        "Financial Times",
+        "The Guardian"
+      ],
+      "issue": "NOV 7, 2026 · UNITED STATES",
+      "pages": "23–25",
+      "pdfPages": "23–25",
+      "importance": 60,
+      "quality": 37,
+      "score": 97,
+      "readTime": 12,
+      "featured": true,
+      "deepRead": true,
+      "summaryEn": "Democrats’ election victory gives them power to investigate the administration, block Senate confirmations and bargain over spending when the new Congress begins in January. It does not give them the two-thirds majorities needed to override a veto. Affordability proposals may become negotiating positions rather than laws, while subpoenas can expose decisions on tariffs, war and private interests. The companion results analysis identifies both voter switching and uneven turnout behind the landslide, rather than one demographic group alone.",
+      "summaryZh": "民主党的选举大胜，使其在1月新国会开始后可以调查政府、阻挡参院任命并以预算讨价还价，却没有达到推翻总统否决所需的三分之二多数。降低生活成本的提案可能先成为谈判筹码，而非法律；传票则可追查关税、战争和私人利益相关决策。配套选情分析发现，胜利同时来自选民转向和投票率差异，不能归结为单一群体。",
+      "backgroundEn": "Congress controls appropriations, but the president retains executive authority and the veto. Some immigration enforcement is already funded. The reported December 11 funding deadline comes before the new majority takes office, creating separate lame-duck and new-Congress negotiations. Winning an election is not the same as immediately taking control of policy.",
+      "backgroundZh": "国会掌握拨款，但总统仍保有行政权和否决权。部分移民执法已获资金。报道中的12月11日资金期限早于新多数就职，因此有跛脚国会与新国会两个谈判阶段。赢得选举不等于立即控制政策。",
+      "argumentEn": [
+        "A majority can restore scrutiny without being able to enact a full programme.",
+        "Budget deadlines create leverage, but funding cuts and shutdown risks divide the opposition too.",
+        "An electoral rebuke is not a permanent ideological conversion: accountability must be paired with results on costs."
+      ],
+      "argumentZh": [
+        "多数席位可以恢复监督，却未必能推行完整施政纲领。",
+        "预算期限创造筹码，但削减资金和停摆风险也会造成反对党内部分歧。",
+        "对执政者的惩罚不是永久意识形态转变，问责还需配合降低成本的成果。"
+      ],
+      "evidenceEn": "Institutional rules and the budget timetable are firmer evidence than politicians’ promises. Pages 24–25 add district results and NORC survey evidence separating switching from turnout. Seat estimates are a November 5 snapshot. Comparing midterms with a presidential election cannot by itself explain every voter’s motivation; interviews describe intentions, not guaranteed outcomes.",
+      "evidenceZh": "制度规则和预算日程，比政治承诺更具确定性。24–25页加入选区结果及NORC调查，区分转投与投票率因素。席位估计是11月5日快照。将期中选举与总统选举比较，不能单独解释每位选民动机；采访说明意图，不保证结果。",
+      "why": "监督权恢复会改变白宫与企业的行为成本；看懂预算和否决权，才能判断竞选承诺能兑现多少。",
+      "limits": "先读23–24页制度分析，再看24–25页选情。下方链接对应配套选情原文，不是主篇制度分析。作者批评特朗普的立场鲜明；席位仍可能调整，监督效果均待实践。",
+      "perspective": "The Guardian stresses democratic relief; the FT foregrounds affordability and Republican recriminations; The Economist focuses on the limits of victory. / 卫报强调民主政治的喘息，FT侧重民生成本与共和党归责，经济学人关注胜利的制度边界。",
+      "original": {
+        "checkedAt": "2026-11-10",
+        "links": [{"publication":"The Economist","url":"https://www.economist.com/united-states/2026/11/05/the-democrats-have-won-the-biggest-congressional-landslide-in-50-years","access":"subscription","verification":"publisher-reference","note":"Companion results article, print pp. 24–25; not the governing analysis on pp. 23–24."}]
+      }
+    },
+    {
+      "id": "t-20261108-foreign-policy",
+      "articleId": "20261107-economist-19-after-fall",
+      "category": "国际",
+      "tags": [
+        [
+          "美国外交",
+          "US foreign policy"
+        ],
+        [
+          "伊朗",
+          "Iran"
+        ],
+        [
+          "总统权力",
+          "Presidential power"
+        ]
+      ],
+      "title": "After the fall",
+      "titleZh": "败选之后的外交权力",
+      "author": "The Economist",
+      "genre": "Foreign-policy briefing",
+      "source": "The Economist",
+      "issue": "NOV 7, 2026 · BRIEFING",
+      "pages": "19–21",
+      "pdfPages": "19–21",
+      "importance": 58,
+      "quality": 36,
+      "score": 94,
+      "readTime": 12,
+      "featured": true,
+      "summaryEn": "Domestic defeat does not automatically restrain an American president abroad. This briefing examines how Trump could turn toward foreign policy after losing Congress, and how Democrats might constrain him through funding, hearings and arms restrictions. Iran, Ukraine and Cuba are different tests. The reported Qeshm strikes show limited fighting continued; a larger campaign, future summit bargains and regime change are discussed as possibilities, not completed events.",
+      "summaryZh": "国内败选不会自动约束美国总统在国外的行动。这篇简报分析特朗普失去国会后可能转向外交，以及民主党如何通过资金、听证与武器限制约束他。伊朗、乌克兰和古巴分别考验这种平衡。已报道的格什姆岛打击说明有限交战仍在继续；更大规模行动、未来峰会交易和政权更替，则是可能性，不是已完成事件。",
+      "backgroundEn": "Presidents often spend more time on diplomacy late in their terms. Yet agreements without domestic support can be fragile. The planned November summit is outside this week’s window. Congressional leverage is substantial but indirect: forces already deployed and executive authority do not vanish with election results.",
+      "backgroundZh": "总统任期后段往往增加外交投入，但缺乏国内支持的协议可能脆弱。文中计划于11月举行的峰会超出本周窗口。国会筹码重要却间接：选举结果不会让已部署军队和行政权限消失。",
+      "argumentEn": [
+        "Reduced domestic room may redirect ambition abroad rather than end it.",
+        "Congress can raise the cost of action without controlling every operation.",
+        "A spectacular diplomatic deal is not necessarily a durable settlement."
+      ],
+      "argumentZh": [
+        "国内施展空间缩小，可能使抱负转向国外，而非终止行动。",
+        "国会能抬高行动成本，却无法控制每个作战决定。",
+        "轰动的外交协议未必是持久的解决方案。"
+      ],
+      "evidenceEn": "Historical travel data, diplomatic comparisons and interviews describe mechanisms. Anonymous accounts of options are weaker than public decisions. Continued Ukraine intelligence cooperation and European arms purchases complicate a story of total US withdrawal. The evidence supports scenarios, not a confident forecast that renewed war is inevitable.",
+      "evidenceZh": "历史出访数据、外交比较和采访解释机制。匿名消息人士关于选项的说法，弱于公开决策。对乌情报合作及欧洲购武延续，也使“美国全面退出”的叙事复杂化。证据支持情境分析，不支持战争重启必然发生的确定预测。",
+      "why": "美国外交仍能改变战争与能源风险；不能把国内制衡增强，直接等同于国际局势降温。",
+      "limits": "结合格什姆岛简报阅读。历史类比不是预测模型，峰会、打击方案和人事猜测不能当作已实施政策。",
+      "original": {
+        "checkedAt": "2026-11-10",
+        "links": []
+      }
+    },
+    {
+      "id": "t-20261108-trade",
+      "articleId": "20261107-economist-65-ai-trade",
+      "category": "经济",
+      "tags": [
+        [
+          "国际贸易",
+          "Global trade"
+        ],
+        [
+          "人工智能",
+          "Artificial intelligence"
+        ],
+        [
+          "供应链",
+          "Supply chains"
+        ]
+      ],
+      "title": "Globalisation strikes back",
+      "titleZh": "全球化反击：AI的另一笔贸易账",
+      "author": "The Economist",
+      "genre": "Data-led economic analysis",
+      "source": "The Economist",
+      "issue": "NOV 7, 2026 · FINANCE & ECONOMICS",
+      "pages": "65–66",
+      "pdfPages": "65–66",
+      "importance": 56,
+      "quality": 38,
+      "score": 94,
+      "readTime": 10,
+      "featured": true,
+      "deepRead": true,
+      "summaryEn": "Protectionism has not stopped AI from creating large cross-border flows. Using a WTO classification, The Economist calculates that global AI-related goods trade rose 55% in the first eight months of 2026. US imports in that category rose 69%, while other goods imports fell 10%. Computing equipment enjoys extensive tariff exemptions. A deficit can partly reflect productive investment, the article argues; replacing China as a visible supplier is not the same as making the whole chain domestic.",
+      "summaryZh": "保护主义未能阻止AI催生大规模跨境货物流。《经济学人》采用WTO分类测算，2026年前八个月全球AI相关产品贸易增长55%；美国此类进口增长69%，其他商品进口下降10%。计算设备享有广泛关税豁免。文章认为，逆差可能部分反映生产性投资；中国不再是显性供货地，也不等于整条供应链实现本土化。",
+      "backgroundEn": "One server can combine US design, Taiwanese fabrication, Dutch machinery, German optics, Korean memory and Mexican assembly. Imports worsen the goods balance at the border, but installed equipment may produce services for years. This is newly published analysis of January–August data, not a 55% rise occurring this week.",
+      "backgroundZh": "一台服务器可结合美国设计、台湾制造、荷兰设备、德国光学、韩国内存与墨西哥组装。进口过境时增加商品逆差，安装后却可能多年生产服务。这是新发表的1–8月数据分析，不是本周突然增长55%。",
+      "argumentEn": [
+        "Domestic AI ambitions depend on foreign hardware and therefore create exceptions to protectionism.",
+        "Relocating assembly reallocates interdependence rather than eliminating it.",
+        "Judge imports by their uses and returns, not only their effect on bilateral deficits."
+      ],
+      "argumentZh": [
+        "国内AI抱负依赖外国硬件，因此推动保护主义出现例外。",
+        "组装地点变化重新分配相互依赖，而非消除依赖。",
+        "评价进口应看用途与回报，不能只看双边逆差。"
+      ],
+      "evidenceEn": "Product definitions, customs series, exemption research and a worked supply chain make the argument testable. Values are nominal dollars: price changes matter, and a broad AI category is not identical to final AI use. Future tariff costs are modelled scenarios. Whether the imported capital earns adequate returns remains unresolved, especially after this week’s market reversal.",
+      "evidenceZh": "商品定义、海关序列、豁免研究和具体供应链，让论证可检验。金额是名义美元，受价格影响；宽泛AI分类不等于最终都用于AI。未来关税成本属于模型情境。进口资本能否赚取足够回报仍未解决，本周市场逆转让问题更突出。",
+      "why": "产业竞争依赖跨国协作，逆差也可能对应投资；看清供应链有助于识别关税、断供和资本回报风险。",
+      "limits": "先看65页分类，再追66页服务器路径。文章自由贸易立场鲜明；名义贸易增幅不是实际产量或生产率增幅。",
+      "original": {
+        "checkedAt": "2026-11-10",
+        "links": [
+          {
+            "publication": "The Economist",
+            "url": "https://www.economist.com/finance-and-economics/2026/11/05/ai-is-turning-protectionists-into-free-traders",
+            "access": "subscription",
+            "verification": "publisher-reference",
+            "note": "Web title differs from print."
+          }
+        ]
+      }
+    },
+    {
+      "id": "t-20261108-markets",
+      "articleId": "20261106-ft-1-tech-stocks",
+      "category": "经济",
+      "tags": [
+        [
+          "金融市场",
+          "Financial markets"
+        ],
+        [
+          "数据中心",
+          "Data centres"
+        ],
+        [
+          "投资风险",
+          "Investment risk"
+        ]
+      ],
+      "title": "Tech stocks plunge as investors worry blue wave will sink AI spending boom",
+      "titleZh": "科技股急跌：选举如何改变AI投入的定价",
+      "author": "Ian Smith / Kate Duguid / Peter Wells",
+      "genre": "Market reporting with cross-publication update",
+      "source": "Financial Times",
+      "publications": [
+        "Financial Times",
+        "The Wall Street Journal",
+        "The Economist"
+      ],
+      "issue": "NOV 6, 2026 · FOLLOW-UP NOV 7–8",
+      "pages": "1; FT Weekend p. 1",
+      "pdfPages": "FT Nov 6: 1; FT Nov 7: 1; WSJ Nov 6: 1–2; Economist: 68–69",
+      "importance": 57,
+      "quality": 35,
+      "score": 92,
+      "readTime": 9,
+      "featured": true,
+      "summaryEn": "The FT connects Thursday’s tech sell-off with fears that newly elected politicians could slow data-centre construction, alongside concerns over expensive AI expansion and its financing. Its print snapshot is intraday; the Journal supplies closing losses. FT Weekend reports Anthropic still intended to list despite reduced valuation expectations. Wednesday’s relief rally and Friday’s partial recovery belong to the same volatile sequence—not a simple market verdict for or against one party.",
+      "summaryZh": "FT将周四科技股抛售与新当选官员可能放缓数据中心建设联系起来，也呈现对AI巨额扩张和融资的疑虑。其纸刊快照是盘中数据，WSJ补充收盘跌幅。FT周末版报道Anthropic在估值预期降低后仍计划上市。周三释然反弹与周五部分回升属于同一波动过程，不是市场支持或反对某党的简单判决。",
+      "backgroundEn": "The Economist’s market article uses November 4 prices and captures the initial rally and sector rotation; later dailies capture the reversal. Prospective restrictions are campaign promises and policy risks, not a uniform federal ban already in force. Financing costs and disappointing earnings were concerns before the vote.",
+      "backgroundZh": "经济学人市场文章采用11月4日价格，记录最初反弹和板块轮动；之后日报才捕捉逆转。潜在限制是竞选承诺和政策风险，不是已经实施的统一联邦禁令。融资成本和业绩不及预期的问题，选前已经存在。",
+      "argumentEn": [
+        "Political change alters expected cash flows before laws change.",
+        "Separate chipmakers, indebted builders and cash-rich computing buyers rather than treating AI as one trade.",
+        "Prices reveal revised expectations, not proof that a technology or every project has failed."
+      ],
+      "argumentZh": [
+        "政治变化可以在法律改变前影响预期现金流。",
+        "应区分芯片商、举债建设者与现金充裕的算力买家，不能把AI当作单一交易。",
+        "价格反映预期修正，不证明技术或每个项目都已失败。"
+      ],
+      "evidenceEn": "Index movements and their timing are observable; fund-manager interviews suggest mechanisms but cannot isolate a single cause. The Nasdaq Composite’s 5.5% closing decline must not be mixed with the Nasdaq 100 or an intraday low. Investor accounts of IPO plans are intentions, not a completed offering. Each publication’s cutoff is preserved.",
+      "evidenceZh": "指数变动和时点可观察，基金经理采访提示机制，却不能识别唯一原因。纳斯达克综合指数收盘跌5.5%，不可与纳斯达克100或盘中低点混用。投资者谈及的上市计划是意图，不是完成发行。综述保留各刊截稿时点。",
+      "why": "技术繁荣能否持续，取决于融资、能源和政策许可；分清这些约束，才能辨认市场风险如何传导。",
+      "limits": "不构成投资建议。先分清盘中与收盘、综合指数与100指数，再读因果解释；周五回升不等于风险出清。",
+      "perspective": "The FT stresses funding and capital spending; the Journal stresses the rout’s scale; The Economist’s earlier snapshot explains sector rotation. / FT关注融资和资本投入，WSJ突出跌势规模，经济学人较早截稿解释板块轮动，时间与视角需区分。",
+      "original": {
+        "checkedAt": "2026-11-10",
+        "links": [
+          {
+            "publication": "The Guardian",
+            "url": "https://www.theguardian.com/business/2026/nov/06/global-stocks-plunge-amid-ai-slowdown-fears-after-democrats-midterm-triumph",
+            "access": "free",
+            "verification": "publisher-page",
+            "note": "Corresponding market coverage; not the FT print article."
+          }
+        ]
+      }
+    },
+    {
+      "id": "t-20261108-ebola",
+      "articleId": "20261107-economist-41-ebola",
+      "category": "社会",
+      "tags": [
+        [
+          "公共卫生",
+          "Public health"
+        ],
+        [
+          "非洲",
+          "Africa"
+        ],
+        [
+          "冲突与医疗",
+          "Conflict and care"
+        ]
+      ],
+      "title": "Still spreading",
+      "titleZh": "仍在扩散：埃博拉防线为何漏失",
+      "author": "The Economist",
+      "genre": "Public-health reporting",
+      "source": "The Economist",
+      "issue": "NOV 7, 2026 · MIDDLE EAST & AFRICA",
+      "pages": "41–42",
+      "pdfPages": "41–42",
+      "importance": 57,
+      "quality": 35,
+      "score": 92,
+      "readTime": 8,
+      "featured": true,
+      "summaryEn": "The outbreak centred on eastern Congo continues despite border measures and screening. At the article’s November 4 cutoff it had caused more than 10,500 confirmed cases and 5,130 deaths. Kenya’s nine cases followed an imported infection; Nigeria’s October case had an unexplained route. Africa CDC’s head said fewer than a quarter of new Congolese cases were known contacts. Conflict, weak services and distrust make transmission hard to see and interrupt.",
+      "summaryZh": "以刚果（金）东部为中心的疫情，在边境措施与筛查之下继续增长。文章截至11月4日记录逾1.05万例确诊、5130人死亡。肯尼亚9例与输入感染有关，尼日利亚10月病例的感染路径未明。非洲疾控中心负责人称，刚果新病例中不到四分之一是已知接触者。冲突、医疗薄弱与不信任，让传播难以被发现和截断。",
+      "backgroundEn": "Ebola spreads through direct contact with infected bodily fluids. This outbreak involves Bundibugyo virus: protection from a vaccine against another Ebola virus cannot be assumed. Trials had begun, but the report had no proven protective result for this outbreak. Earlier first cases outside Congo remain background, not newly announced November infections.",
+      "backgroundZh": "埃博拉经直接接触感染者体液传播。本轮涉及本迪布焦病毒，不能假定针对另一种埃博拉病毒的疫苗也能保护。试验已开始，但报道尚无针对本轮疫情已证实的保护结果。境外较早首例是背景，不是11月新宣布感染。",
+      "argumentEn": [
+        "Contact tracing matters more than the appearance of control at borders.",
+        "Violence and distrust weaken testing, isolation and routine care at the same time.",
+        "Interrupted maternal services, immunisation and malaria care can add substantial indirect harm."
+      ],
+      "argumentZh": [
+        "接触者追踪比边境看似受控更关键。",
+        "暴力和不信任同时削弱检测、隔离与日常医疗。",
+        "产科、免疫接种和疟疾诊疗中断，会增加重大间接伤害。"
+      ],
+      "evidenceEn": "Case counts, interviews and the tracing gap support concern about spread. Incomplete surveillance complicates historical comparisons. A forecast of the worst outbreak is conditional, not an established record. Nigeria’s transmission route remained unresolved; the article does not prove undisclosed active infection in Uganda.",
+      "evidenceZh": "病例数、采访和追踪缺口支持传播担忧，但不完整监测使历史比较困难。“可能最严重”是条件预测，不是已创纪录。尼日利亚感染路线仍未明，文章没有证明乌干达存在未披露的活跃感染。",
+      "why": "疫情控制依赖可靠医疗与社会信任；局部冲突可能经跨境传播和常规诊疗中断放大健康损失。",
+      "limits": "数字是报道快照，不作实时健康指引。个人健康或旅行决定应查看当地卫生部门最新通知。",
+      "original": {
+        "checkedAt": "2026-11-10",
+        "links": []
+      }
+    },
+    {
+      "id": "t-20261108-alzheimers",
+      "articleId": "20261109-newyorker-46-alzheimers",
+      "category": "社会",
+      "tags": [
+        [
+          "医学证据",
+          "Medical evidence"
+        ],
+        [
+          "老龄化",
+          "Ageing"
+        ],
+        [
+          "诊断边界",
+          "Diagnostic boundaries"
+        ]
+      ],
+      "title": "The Alzheimer’s Wars",
+      "titleZh": "阿尔茨海默病之争：风险何时成了疾病",
+      "author": "Manvir Singh",
+      "genre": "Reported investigation",
+      "source": "The New Yorker",
+      "issue": "NOV 9, 2026 · ONLINE NOV 2",
+      "pages": "46–55",
+      "pdfPages": "48–57",
+      "importance": 54,
+      "quality": 39,
+      "score": 93,
+      "readTime": 28,
+      "featured": true,
+      "deepRead": true,
+      "summaryEn": "New blood tests and amyloid-targeting drugs have made the definition of Alzheimer’s urgent. Some criteria identify disease through biomarkers before memory or daily functioning deteriorates; other experts call those findings risk factors in a cognitively normal person. Singh follows asymptomatic trial participant Donald Kewman and traces how research, regulation and commercial incentives became entangled. Detecting amyloid, predicting dementia and proving treatment helps are three different achievements, not one breakthrough.",
+      "summaryZh": "新血检和靶向淀粉样蛋白药物，让阿尔茨海默病定义变得迫切。一些标准在记忆或日常功能受损前就依据标志物定义疾病；另一些专家认为，对认知正常者而言，这些只是风险因素。Singh追踪无症状试验参与者唐纳德·基尤曼，梳理研究、监管与商业激励的交织。检测淀粉样蛋白、预测痴呆、证明治疗有益，是三种不同成就，不是一个突破。",
+      "backgroundEn": "Diagnosis was once centred on progressive cognitive symptoms, with pathology providing confirmation. Biomarkers improve accuracy for symptomatic patients, but many cognitively normal older people with amyloid never develop dementia. Approval for early symptomatic disease does not establish prevention in asymptomatic people. The November 9 print article went online on November 2, inside this week’s window.",
+      "backgroundZh": "过去诊断以进行性认知症状为中心，再由病理确认。标志物改善有症状者的诊断，但许多认知正常且淀粉样蛋白阳性的老人不会发展为痴呆。获批用于早期有症状疾病，不证明可预防无症状者发病。11月9日纸刊文章于11月2日上线，属于本周。",
+      "argumentEn": [
+        "A biological measurement is not an individual prognosis.",
+        "A biomarker response and a meaningful clinical benefit are different endpoints.",
+        "Financial relationships deserve scrutiny without substituting for scientific assessment.",
+        "Diagnosis itself affects identity, anxiety, insurance and family planning."
+      ],
+      "argumentZh": [
+        "生物测量不等于个体预后。",
+        "标志物改善与有意义的临床获益，是不同终点。",
+        "财务关系值得审视，却不能替代科学评估。",
+        "诊断本身影响身份认知、焦虑、保险和家庭安排。"
+      ],
+      "evidenceEn": "Patient reporting is combined with interviews across the dispute, diagnostic frameworks, approval history and trials. Singh separates relative slowing from modest absolute cognitive-scale changes and considers adverse effects. Null results remain useful evidence. His scepticism is balanced by the strongest case for early intervention: damage may be advanced before symptoms appear. One patient illustrates consequences; he cannot establish efficacy.",
+      "evidenceZh": "患者追踪结合争论双方采访、诊断框架、审批历史与试验。Singh区分相对减缓与认知量表上较小的绝对变化，并考虑不良反应；无效结果仍是有用证据。他的质疑也呈现早期干预最强理由：症状前损伤可能已深。单一患者说明后果，不能证明药效。",
+      "why": "疾病定义会改变谁被治疗、谁承担风险与费用；分清检测、预测和疗效，是理解医学新闻的关键。",
+      "limits": "不是诊断或用药建议。先读46、51–53页定义争论，再读54–55页疗效证据；不要据此自行停止治疗。",
+      "original": {
+        "checkedAt": "2026-11-10",
+        "links": [
+          {
+            "publication": "The New Yorker",
+            "url": "https://www.newyorker.com/magazine/2026/11/09/did-the-world-just-gain-hundreds-of-millions-of-alzheimers-patients",
+            "access": "subscription",
+            "verification": "publisher-page",
+            "note": "Online November 2; print title differs."
+          }
+        ]
+      }
+    },
+    {
+      "id": "t-20261108-cyber",
+      "articleId": "20261107-economist-57-cyber",
+      "category": "科技",
+      "tags": [
+        [
+          "网络安全",
+          "Cybersecurity"
+        ],
+        [
+          "基础设施",
+          "Infrastructure"
+        ],
+        [
+          "人工智能",
+          "Artificial intelligence"
+        ]
+      ],
+      "title": "Hack to the future",
+      "titleZh": "网络攻击的新速度",
+      "author": "The Economist",
+      "genre": "Business and technology reporting",
+      "source": "The Economist",
+      "publications": [
+        "The Economist",
+        "Financial Times",
+        "The Guardian"
+      ],
+      "issue": "NOV 7, 2026 · BUSINESS",
+      "pages": "57–58",
+      "pdfPages": "57–58",
+      "importance": 57,
+      "quality": 36,
+      "score": 93,
+      "readTime": 9,
+      "featured": true,
+      "summaryEn": "A wave of flaws and intrusions has shortened companies’ time to defend themselves. AI can accelerate vulnerability discovery, exploitation and impersonation; defenders also use models to scan code and detect suspicious activity. Damage reaches operational equipment such as refrigeration, not just stolen files. Smaller suppliers and unapproved employee tools can open paths into larger organisations. The companion report asks whether AI labs can become trusted security vendors—a question capability alone cannot settle.",
+      "summaryZh": "连续漏洞与入侵压缩了企业防守时间。AI可加速漏洞发现、利用与冒充，防守者也用模型扫描代码、发现异常。损害触及制冷等运营设备，而非仅文件被盗。小供应商和员工未经批准使用的工具，可能打开进入大机构的路径。配套报道追问AI实验室能否成为可信安全供应商，技术能力本身不能回答。",
+      "backgroundEn": "The October Binance theft is context, not a new theft this week. The refrigeration wave is the immediate development. Old software and default passwords predate generative AI, which can make exploitation faster and cheaper. Similar targets do not establish a common attacker or prove AI was involved in each incident.",
+      "backgroundZh": "10月币安盗窃是背景，不是本周再次发生。制冷攻击是即时发展。旧软件和默认密码早于生成式AI，后者可能让利用更快更便宜。目标相似不证明共同攻击者，也不证明每起事件都有AI参与。",
+      "argumentEn": [
+        "The interval from discovery to repair is a critical security measure.",
+        "Operational equipment and suppliers extend digital risk into physical services.",
+        "Defensive AI needs access, budgets, response procedures and trust to be effective."
+      ],
+      "argumentZh": [
+        "发现到修复之间的时间，是关键安全指标。",
+        "运营设备和供应商使数字风险进入实体服务。",
+        "防御AI需要工具准入、预算、响应程序与信任配合。"
+      ],
+      "evidenceEn": "Incidents, the CVE series and provider interviews describe a plausible acceleration. Vendors have commercial incentives. More reported vulnerabilities do not directly measure successful attacks or AI’s causal share. Forensic attribution varies: documented damage must remain distinct from a general technological mechanism.",
+      "evidenceZh": "事件、CVE序列和服务商采访呈现合理加速机制，但厂商有商业利益。漏洞报告更多，不直接衡量成功攻击或AI因果份额。取证归因参差，已记录损害必须与一般技术机制区分。",
+      "why": "数字系统连接食品、支付和公共服务；修补速度与供应商安全，正在决定风险会否扩散到现实生活。",
+      "limits": "报道解释现状，另列社论提出工具分配方案；不要把政策主张当作实证结果。",
+      "original": {
+        "checkedAt": "2026-11-10",
+        "links": []
+      }
+    },
+    {
+      "id": "t-20261108-richter",
+      "articleId": "20261107-economist-80-richter",
+      "category": "文化",
+      "tags": [
+        [
+          "音乐",
+          "Music"
+        ],
+        [
+          "文化传播",
+          "Cultural circulation"
+        ],
+        [
+          "注意力",
+          "Attention"
+        ]
+      ],
+      "title": "On the nature of Max Richter",
+      "titleZh": "马克斯·里希特：动荡时代的安慰之声",
+      "author": "The Economist",
+      "genre": "Interview and cultural criticism",
+      "source": "The Economist",
+      "issue": "NOV 7, 2026 · CULTURE · BACKGROUND",
+      "pages": "80",
+      "pdfPages": "80",
+      "importance": 43,
+      "quality": 35,
+      "score": 78,
+      "readTime": 6,
+      "featured": true,
+      "summaryEn": "An interview around Richter’s new album, While the Flood Rages, asks why a classically trained composer has become so widely heard through films, streaming and concert halls. His music combines classical craft, minimalism, electronics and emotional directness. The article takes both consolation and its critics seriously: does soothing sound help listeners face catastrophe or soften it into a mood? This is cultural background, not a claim that every work mentioned is newly released.",
+      "summaryZh": "围绕新专辑While the Flood Rages的采访，追问古典训练出身的作曲家为何经电影、串流和音乐厅广泛传播。他结合古典技艺、极简主义、电子声响和直接情感。文章同时重视安慰及其批评：舒缓声响帮助人面对灾难，还是把灾难柔化为氛围？这是文化背景，不表示文中所有作品都刚发行。",
+      "backgroundEn": "On the Nature of Daylight dates to 2004; Sleep and Voices also predate this week. The new album draws on a ballet inspired by Margaret Atwood’s MaddAddam trilogy. Music moves between attentive listening, film scoring and everyday accompaniment; its political origins need not determine how listeners receive it.",
+      "backgroundZh": "On the Nature of Daylight始于2004年，Sleep和Voices也早于本周。新专辑取材于受阿特伍德MaddAddam三部曲启发的芭蕾。音乐在专注聆听、配乐和日常陪伴之间移动，其政治起源未必决定听众如何接受。",
+      "argumentEn": [
+        "Crossing genres and channels can reach listeners beyond the classical circuit.",
+        "Emotional accessibility is not in itself evidence of shallowness.",
+        "Consolation can sustain attention or displace confrontation; intention alone does not settle the effect."
+      ],
+      "argumentZh": [
+        "跨越类型和渠道，可接触古典圈外听众。",
+        "情感易于进入，本身不证明浅薄。",
+        "安慰可维系关注，也可替代面对现实，创作意图不能单独决定效果。"
+      ],
+      "evidenceEn": "A studio interview, musical examples, collaborators and an opposing critic give the profile texture. Streaming totals establish reach, not attentive listening or political impact. The interpretation of consolation remains criticism, not a measured social effect.",
+      "evidenceZh": "工作室采访、音乐示例、合作者及反对意见使特写有层次。串流量证明触达范围，不证明专注聆听或政治影响。对安慰的解释属于评论，不是测量到的社会效果。",
+      "why": "文化不仅反映时局，也塑造我们承受和理解时局的方式；安慰与麻木之间的边界值得辨认。",
+      "limits": "配合聆听再读；不要把播放量等同艺术价值，也不要把评论者听感当作普遍心理结论。",
+      "original": {
+        "checkedAt": "2026-11-10",
+        "links": []
+      }
+    }
+  ],
+  "commentary": [
+    {
+      "id": "c-20261108-philipson",
+      "articleId": "20261107-economist-18-philipson",
+      "titleEn": "Divided Government May Mean More Spending, Not Less",
+      "titleZh": "分立政府未必节省开支，可能反而花得更多",
+      "author": "Tomas J. Philipson",
+      "authorRole": "Former acting chairman, US Council of Economic Advisers, Trump’s first term",
+      "source": "The Economist · By Invitation · NOV 7, 2026",
+      "pages": "18 / PDF 18",
+      "position": "亲市场、支持放松监管的前特朗普经济顾问；不认为共和党败选会自动扭转其政策。",
+      "tags": [
+        [
+          "财政政策",
+          "Fiscal policy"
+        ],
+        [
+          "分立政府",
+          "Divided government"
+        ]
+      ],
+      "thesisEn": "A Democratic Congress need not reverse Trump’s agenda or impose fiscal restraint. Philipson argues that presidential powers preserve much of the programme while both parties may bargain for more spending on their own priorities.",
+      "thesisZh": "民主党国会未必扭转特朗普议程或带来财政克制。Philipson认为，总统权限可保留许多政策，两党却可能互相支持各自重点项目而增加支出。",
+      "backgroundEn": "Writing after the vote, he distinguishes aggregate growth from households’ accumulated price shock, then examines vetoes, tariff authorities and budget deals. His praise for deregulation is an explicit value judgement.",
+      "backgroundZh": "作者在选后区分总量增长与家庭累计价格冲击，再分析否决权、关税权限与预算交易。其赞扬放松监管是明确价值判断。",
+      "caseEn": [
+        "Purchasing power can deteriorate while GDP expands.",
+        "A majority without a veto override cannot simply unwind war and tariffs.",
+        "Recent bipartisan budget deals expanded defence and domestic spending together."
+      ],
+      "caseZh": [
+        "GDP增长时购买力仍可能恶化。",
+        "无法推翻否决的多数党，不能直接撤销战争与关税。",
+        "近期跨党预算交易同时增加国防和国内支出。"
+      ],
+      "evidenceEn": "Price measures and identifiable budget deals support a mechanism, not an inevitable forecast. Claimed deregulatory savings are administration estimates, not independently established welfare gains. Comparing different presidential periods is not a controlled assessment of inflation causation.",
+      "evidenceZh": "物价指标和具体预算交易支持一种机制，不构成必然预测。放松监管节省金额是政府估计，不是独立确认的福利收益。比较不同总统时期，并非通胀成因的受控评估。",
+      "value": "提醒读者区分政治胜负与政策能力，并检验“僵局有利于财政纪律”这类习惯判断。",
+      "challenge": "近年交易未必代表这次格局；战争成本、利率和党内分歧，可能让双方难以继续互换开支。",
+      "takeaway": "看预算时追问：谁为谁的优先事项投票，交换条件是什么，新增承诺由谁融资。",
+      "original": {
+        "checkedAt": "2026-11-10",
+        "links": []
+      }
+    },
+    {
+      "id": "c-20261108-marcus",
+      "articleId": "20261109-newyorker-17-corruption",
+      "titleEn": "Corruption Eruption",
+      "titleZh": "腐败议题为何在此刻引爆",
+      "author": "Ruth Marcus",
+      "authorRole": "Contributing writer, The New Yorker; former Washington Post columnist",
+      "source": "The New Yorker · NOV 9, 2026 · ONLINE NOV 1 · PRE-ELECTION BACKGROUND",
+      "pages": "17–18 / PDF 19–20",
+      "position": "重视公共廉正，批评特朗普利益冲突，同时质疑反腐口号能否替代具体民生方案。",
+      "tags": [
+        [
+          "反腐败",
+          "Anti-corruption"
+        ],
+        [
+          "选举传播",
+          "Election messaging"
+        ]
+      ],
+      "thesisEn": "Corruption may change votes when people connect officials’ enrichment with their own financial strain. Marcus examines this strategy before election day; she does not claim to have proved how many votes it changed after the result.",
+      "thesisZh": "当选民把官员致富与自身经济压力联系起来时，腐败可能影响投票。Marcus在选前分析这种策略，并非选后声称已证明它改变多少选票。",
+      "backgroundEn": "Published online on November 1 in the supplied November 9 issue, this is previously unused pre-election background. Polls, focus groups and advertisements describe the climate before November 3, not a retrospective experiment on the landslide.",
+      "backgroundZh": "文章11月1日上线，收入所提供的11月9日刊，是此前未用的选前背景。民调、焦点小组和广告说明11月3日前的氛围，不是针对大胜的事后实验。",
+      "caseEn": [
+        "Financial pressure can reduce tolerance of political self-dealing.",
+        "Campaigns connect enrichment allegations with the cost of living.",
+        "Anti-corruption appeals can also let a party avoid specifying how it would govern."
+      ],
+      "caseZh": [
+        "经济压力可能降低对政治谋私的容忍。",
+        "竞选团队将私人获利指控与生活成本联系起来。",
+        "反腐诉求也可能让政党回避具体施政方案。"
+      ],
+      "evidenceEn": "Polls, Republican focus-group observations and advertising spending establish salience and strategy. They do not prove corruption caused inflation or identify its share of the election result. Contested allegations, voter perceptions and convictions are different kinds of evidence.",
+      "evidenceZh": "民调、共和党焦点小组观察与广告支出说明热度和策略，不证明腐败造成通胀，也不能识别其对选举结果的贡献。争议指控、选民观感与定罪是不同证据。",
+      "value": "把反腐从道德口号放回选民生活，帮助识别政治传播如何把愤怒转化为选择。",
+      "challenge": "觉得官员腐败不等于已证实违法；把腐败与物价直接挂钩，也可能省略复杂经济机制。",
+      "takeaway": "听到反腐承诺时，同时追问证据、利益冲突规则与可执行的改善方案。",
+      "original": {
+        "checkedAt": "2026-11-10",
+        "links": [
+          {
+            "publication": "The New Yorker",
+            "url": "https://www.newyorker.com/magazine/2026/11/09/corruption-on-the-ballot",
+            "access": "subscription",
+            "verification": "publisher-page",
+            "note": "Online November 1: pre-election background."
+          }
+        ]
+      }
+    },
+    {
+      "id": "c-20261108-cyber",
+      "articleId": "20261107-economist-10-cyber-leader",
+      "titleEn": "Give the Good Guys Guns",
+      "titleZh": "让防守方获得更好的工具",
+      "author": "The Economist editorial board",
+      "authorRole": "Institutional editorial · no individual author",
+      "source": "The Economist · Leaders · NOV 7, 2026",
+      "pages": "10–11 / PDF 10–11",
+      "position": "主张优先扩大可信防御者获得先进AI工具的权限，同时限制强攻击能力的无差别扩散。",
+      "tags": [
+        [
+          "网络治理",
+          "Cyber governance"
+        ],
+        [
+          "工具可及性",
+          "Access to tools"
+        ]
+      ],
+      "thesisEn": "Defenders should have better AI capabilities than attackers. The editorial urges faster access to advanced defensive programmes, limits on destructive capabilities and practical support for organisations with weak security.",
+      "thesisZh": "防守方应拥有优于攻击方的AI能力。社论主张加快先进防御计划准入、限制破坏能力扩散，并支持安全基础薄弱的机构。",
+      "backgroundEn": "The editorial responds to recent hacks and restricted access to frontier tools. It revises the newspaper’s earlier hope that AI would quickly favour defenders. Its policy proposal is separate from evidence on individual attacks.",
+      "backgroundZh": "社论回应近期攻击及前沿工具准入受限，也修正该刊此前认为AI会迅速有利于防守者的期待。政策建议与个别攻击的证据需要分开。",
+      "caseEn": [
+        "Slow approvals can leave legitimate organisations using weaker tools.",
+        "A public patch can reveal an exploit before all vulnerable systems are repaired.",
+        "Better models still need continuous patching and support for basic security."
+      ],
+      "caseZh": [
+        "缓慢审批可能让合法机构只能使用较弱工具。",
+        "公开补丁可能在所有系统修复前暴露攻击路径。",
+        "更好模型仍需持续修补和基础安全支持配合。"
+      ],
+      "evidenceEn": "Reported incidents and patching mechanics motivate the proposal, but no controlled comparison establishes that this access regime would safely create a defensive advantage. Strong tools are dual-use; deciding who qualifies as a defender is itself a governance problem.",
+      "evidenceZh": "已报道事件和补丁机制构成建议动机，却没有受控比较证明这种准入制度能安全形成防御优势。强工具具有双重用途，谁算防守者本身就是治理难题。",
+      "value": "把抽象AI安全转为具体分配问题：谁先拿到工具、谁承担等待成本、谁保护小机构。",
+      "challenge": "可信准入可能形成垄断或排除资源薄弱者；工具泄漏与内部滥用也可能抵消防御优势。",
+      "takeaway": "评价安全政策，不只看模型强弱，也看权限、响应速度、问责与弱势机构是否真正受保护。",
+      "original": {
+        "checkedAt": "2026-11-10",
+        "links": [
+          {
+            "publication": "The Economist",
+            "url": "https://www.economist.com/leaders/2026/11/05/the-world-must-act-to-stop-a-cyber-disaster",
+            "access": "subscription",
+            "verification": "publisher-reference",
+            "note": "Web title differs from print."
+          }
+        ]
+      }
+    }
+  ],
+  "sources": [
+    {
+      "publication": "Financial Times Weekend Magazine",
+      "issue": "FT Weekend Magazine - 7 November 2026",
+      "pages": 48,
+      "status": "Scan; only PDF pp. 1–8 OCR-screened, including contents. No feature body used."
+    },
+    {
+      "publication": "Financial Times",
+      "issue": "FT20261102",
+      "pages": 24,
+      "status": "Full local OCR index; front page screened. No claim of full manual reading."
+    },
+    {
+      "publication": "Financial Times",
+      "issue": "FT20261103",
+      "pages": 24,
+      "status": "Full local OCR index; front page screened. No claim of full manual reading. PDF pp. 1, 9 refrigeration report reviewed."
+    },
+    {
+      "publication": "Financial Times",
+      "issue": "FT20261104",
+      "pages": 24,
+      "status": "Full local OCR index; front page screened. No claim of full manual reading."
+    },
+    {
+      "publication": "Financial Times",
+      "issue": "FT20261105",
+      "pages": 26,
+      "status": "Full local OCR index; front page screened. No claim of full manual reading."
+    },
+    {
+      "publication": "Financial Times",
+      "issue": "FT20261106",
+      "pages": 22,
+      "status": "Full local OCR index; front page screened. No claim of full manual reading. PDF pp. 1, 2, 4 reviewed; market values are intraday, not closing. BOE forecast differs from WSJ snapshot; WSJ figure explicitly attributed."
+    },
+    {
+      "publication": "Financial Times",
+      "issue": "FT20261107",
+      "pages": 74,
+      "status": "Full local OCR index; front page screened. No claim of full manual reading. PDF p. 1 IPO follow-up reviewed; main newspaper and supplements have separate printed numbering."
+    },
+    {
+      "publication": "The New York Times",
+      "issue": "NYT20261102",
+      "pages": 68,
+      "status": "Full text index; front page screened. No claim of full manual reading. Repeated text layers/large sports tables are not additional stories."
+    },
+    {
+      "publication": "The New York Times",
+      "issue": "NYT20261103",
+      "pages": 86,
+      "status": "Full text index; front page screened. No claim of full manual reading. Repeated text layers/large sports tables are not additional stories."
+    },
+    {
+      "publication": "The New York Times",
+      "issue": "NYT20261104",
+      "pages": 48,
+      "status": "Full text index; front page screened. No claim of full manual reading."
+    },
+    {
+      "publication": "The New York Times",
+      "issue": "NYT20261105",
+      "pages": 46,
+      "status": "Full text index; front page screened. No claim of full manual reading."
+    },
+    {
+      "publication": "The New York Times",
+      "issue": "NYT20261106",
+      "pages": 48,
+      "status": "Full text index; front page screened. No claim of full manual reading."
+    },
+    {
+      "publication": "The New York Times",
+      "issue": "NYT20261107",
+      "pages": 46,
+      "status": "Full text index; front page screened. No claim of full manual reading. PDF pp. 1, 19–20 and 25 reviewed for Miller, jobs and market reporting; B1 is PDF 25."
+    },
+    {
+      "publication": "The New York Times",
+      "issue": "NYT20261108",
+      "pages": 116,
+      "status": "Full text index; front page screened. No claim of full manual reading."
+    },
+    {
+      "publication": "The Economist · UK edition",
+      "issue": "TEUK20261107",
+      "pages": 92,
+      "status": "Full text index; contents screened. Regional duplicate of US issue, not an independent corroborating source. Citations use US pagination."
+    },
+    {
+      "publication": "The Economist · US edition",
+      "issue": "TEUSA20261107",
+      "pages": 84,
+      "status": "Full text index; contents/weekly summaries pp. 5–8 screened; selected pp. 9–11, 18–25, 41–42, 57–58, 65–66, 68–69, 80 read. Printed/PDF numbers agree; pp. 23 and 65 rendered and visually checked."
+    },
+    {
+      "publication": "The Guardian",
+      "issue": "The Guardian - 02 November 2026",
+      "pages": 44,
+      "status": "Full text index; front page screened. No claim of full manual reading."
+    },
+    {
+      "publication": "The Guardian",
+      "issue": "The Guardian - 03 November 2026",
+      "pages": 40,
+      "status": "Full text index; front page screened. No claim of full manual reading. Selected main-news pages reviewed; supplement page numbering may restart."
+    },
+    {
+      "publication": "The Guardian",
+      "issue": "The Guardian - 04 November 2026",
+      "pages": 64,
+      "status": "Full text index; front page screened. No claim of full manual reading."
+    },
+    {
+      "publication": "The Guardian",
+      "issue": "The Guardian - 05 November 2026",
+      "pages": 44,
+      "status": "Full text index; front page screened. No claim of full manual reading. Selected main-news pages reviewed; supplement page numbering may restart."
+    },
+    {
+      "publication": "The Guardian",
+      "issue": "The Guardian - 06 November 2026",
+      "pages": 40,
+      "status": "Full text index; front page screened. No claim of full manual reading. Selected main-news pages reviewed; supplement page numbering may restart."
+    },
+    {
+      "publication": "The Guardian",
+      "issue": "The Guardian - 7 November 2026",
+      "pages": 212,
+      "status": "Full text index; front page screened. No claim of full manual reading."
+    },
+    {
+      "publication": "The New Yorker",
+      "issue": "The New Yorker - November 09, 2026",
+      "pages": 86,
+      "status": "Full text index; contents screened. Printed pp. 17–18/PDF 19–20 and printed pp. 46–55/PDF 48–57 read; PDF 48 and 56 visually checked. Alzheimer article online Nov 2; Marcus Nov 1 is pre-election background. Others reserved."
+    },
+    {
+      "publication": "The Wall Street Journal",
+      "issue": "WSJ20261102",
+      "pages": 28,
+      "status": "Full text index; front page screened. No claim of full manual reading."
+    },
+    {
+      "publication": "The Wall Street Journal",
+      "issue": "WSJ20261103",
+      "pages": 28,
+      "status": "Full text index; front page screened. No claim of full manual reading. A7/PDF 7 Qeshm report read."
+    },
+    {
+      "publication": "The Wall Street Journal",
+      "issue": "WSJ20261104",
+      "pages": 30,
+      "status": "Full text index; front page screened. No claim of full manual reading."
+    },
+    {
+      "publication": "The Wall Street Journal",
+      "issue": "WSJ20261105",
+      "pages": 28,
+      "status": "Full text index; front page screened. No claim of full manual reading."
+    },
+    {
+      "publication": "The Wall Street Journal",
+      "issue": "WSJ20261106",
+      "pages": 58,
+      "status": "Full text index; front page screened. No claim of full manual reading. A1–A2 and A6–A8/PDF 1–2, 6–8 read for markets, BOE, Brand, Paraguay and Ukraine."
+    }
+  ],
+  "audit": [
+    {
+      "article": "Democrats’ next challenge",
+      "genre": "Reported political analysis",
+      "importance": 60,
+      "quality": 37,
+      "decision": "Selected deep read; bilingual evidence and limits checked."
+    },
+    {
+      "article": "After the fall",
+      "genre": "Foreign-policy briefing",
+      "importance": 58,
+      "quality": 36,
+      "decision": "Selected highlight; dates and source boundaries retained."
+    },
+    {
+      "article": "Globalisation strikes back",
+      "genre": "Data-led economic analysis",
+      "importance": 56,
+      "quality": 38,
+      "decision": "Selected deep read; bilingual evidence and limits checked."
+    },
+    {
+      "article": "Tech stocks plunge as investors worry blue wave will sink AI spending boom",
+      "genre": "Market reporting with cross-publication update",
+      "importance": 57,
+      "quality": 35,
+      "decision": "Selected highlight; dates and source boundaries retained."
+    },
+    {
+      "article": "Still spreading",
+      "genre": "Public-health reporting",
+      "importance": 57,
+      "quality": 35,
+      "decision": "Selected highlight; dates and source boundaries retained."
+    },
+    {
+      "article": "The Alzheimer’s Wars",
+      "genre": "Reported investigation",
+      "importance": 54,
+      "quality": 39,
+      "decision": "Selected deep read; bilingual evidence and limits checked."
+    },
+    {
+      "article": "Hack to the future",
+      "genre": "Business and technology reporting",
+      "importance": 57,
+      "quality": 36,
+      "decision": "Selected highlight; dates and source boundaries retained."
+    },
+    {
+      "article": "On the nature of Max Richter",
+      "genre": "Interview and cultural criticism",
+      "importance": 43,
+      "quality": 35,
+      "decision": "Selected highlight; dates and source boundaries retained."
+    },
+    {
+      "article": "Paraguay president offers to resign after bank collapse",
+      "genre": "Daily breaking report",
+      "importance": 57,
+      "quality": 33,
+      "decision": "Brief; evaluate short news separately from features."
+    },
+    {
+      "article": "Bomb threats disrupt European flights",
+      "genre": "Daily breaking report",
+      "importance": 56,
+      "quality": 34,
+      "decision": "Brief; unknown attribution and no explosives retained."
+    }
+  ]
+}
