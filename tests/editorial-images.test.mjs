@@ -2,6 +2,15 @@ import assert from 'node:assert/strict';
 import {readFile, stat} from 'node:fs/promises';
 import test from 'node:test';
 
+test('pilot keeps unverified event photos and institutional portraits absent', async () => {
+  const images = JSON.parse(await readFile(new URL('../data/editorial-images.json', import.meta.url), 'utf8'));
+  const ids = ['brief-afghanistan', 'brief-iran-shipping', 'brief-defence-pact', 'brief-ebola',
+    'brief-ukraine', 'brief-nvidia', 'brief-meta-trial', 'brief-immigration', 'brief-canada',
+    'brief-law-conflict', 'brief-reading', 'brief-ai-consciousness', 'comment-engage-taliban',
+    'comment-immigration', 'comment-reading'];
+  for (const id of ids) assert.equal(images[id], undefined, id);
+});
+
 test('September 27 uses the actual visit photo and leaves unverified placements empty', async () => {
   const images = JSON.parse(await readFile(new URL('../data/editorial-images.json', import.meta.url), 'utf8'));
   const issue = JSON.parse(await readFile(new URL('../data/editions/2026-09-27.json', import.meta.url), 'utf8'));
